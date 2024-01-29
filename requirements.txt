@@ -1,0 +1,14 @@
+selenium
+python-dotenv
+bs4
+sacremoses
+sentencepiece
+transformers
+pandas
+datasets
+torch
+torchvision 
+torchaudio
+IPython
+sacrebleu
+evaluate
