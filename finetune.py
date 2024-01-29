@@ -28,7 +28,7 @@ raw_datasets = load_dataset("Eugenememe/netflix-en-de")
 metric = evaluate.load("sacrebleu")
 
 # Tokenizer and model checkpoint
-MODEL_CHECKPOINT = f"Helsinki-NLP/opus-mt-en-de"
+MODEL_CHECKPOINT = "Helsinki-NLP/opus-mt-en-de"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_CHECKPOINT)
 
 PREFIX = ""
