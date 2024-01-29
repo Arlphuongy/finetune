@@ -21,18 +21,19 @@ from transformers import (
 
 os.environ["WANDB_DISABLED"] = "true"
 
-raw_datasets = load_dataset("Eugenememe/netflix-en-zh")
+SOURCE_LANG = "en"
+TARGET_LANG = "de"
+
+raw_datasets = load_dataset("Eugenememe/netflix-en-de")
 metric = evaluate.load("sacrebleu")
 
 # Tokenizer and model checkpoint
-MODEL_CHECKPOINT = "Helsinki-NLP/opus-mt-en-zh"
+MODEL_CHECKPOINT = f"Helsinki-NLP/opus-mt-en-de"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_CHECKPOINT)
 
 PREFIX = ""
 MAX_INPUT_LENGTH = 128
 MAX_TARGET_LENGTH = 128
-SOURCE_LANG = "en"
-TARGET_LANG = "zh"
 
 
 # Preprocessing function
@@ -54,7 +55,7 @@ tokenized_datasets = raw_datasets.map(preprocess_function, batched=True)
 
 model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CHECKPOINT)
 
-BATCH_SIZE = 48
+BATCH_SIZE = 64
 MODEL_NAME = MODEL_CHECKPOINT.rsplit("/", maxsplit=1)[-1]
 
 args = Seq2SeqTrainingArguments(
