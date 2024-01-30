@@ -1,0 +1,217 @@
+root@fbf8b3063406:/workspace/finetune# python3 finetune.py
+/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py:3866: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()  return self.fget.__get__(instance, owner)()
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+{'loss': 1.5195, 'learning_rate': 9.84447900466563e-06, 'epoch': 0.08}
+{'loss': 1.4346, 'learning_rate': 9.68895800933126e-06, 'epoch': 0.16}
+{'loss': 1.4512, 'learning_rate': 9.53343701399689e-06, 'epoch': 0.23}
+{'loss': 1.448, 'learning_rate': 9.37791601866252e-06, 'epoch': 0.31}
+{'loss': 1.4343, 'learning_rate': 9.22239502332815e-06, 'epoch': 0.39}
+  8%|████████▏                                                                                                | 500/6430 [00:57<11:11,  8.83it/s]Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 512, 'num_beams': 4, 'bad_words_ids': [[80034]], 'forced_eos_token_id': 0}
+{'loss': 1.4372, 'learning_rate': 9.06687402799378e-06, 'epoch': 0.47}
+{'loss': 1.4107, 'learning_rate': 8.91135303265941e-06, 'epoch': 0.54}
+{'loss': 1.4244, 'learning_rate': 8.75583203732504e-06, 'epoch': 0.62}
+{'loss': 1.4049, 'learning_rate': 8.60031104199067e-06, 'epoch': 0.7}
+{'loss': 1.4064, 'learning_rate': 8.4447900466563e-06, 'epoch': 0.78}
+ 16%|████████████████▏                                                                                       | 1000/6430 [01:56<10:39,  8.49it/s]Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 512, 'num_beams': 4, 'bad_words_ids': [[80034]], 'forced_eos_token_id': 0}
+{'loss': 1.429, 'learning_rate': 8.289269051321928e-06, 'epoch': 0.86}
+{'loss': 1.4045, 'learning_rate': 8.13374805598756e-06, 'epoch': 0.93}
+{'eval_loss': 1.1134024858474731, 'eval_bleu': 33.9549, 'eval_gen_len': 11.1306, 'eval_runtime': 408.6499, 'eval_samples_per_second': 66.071, 'ev
+al_steps_per_second': 0.788, 'epoch': 1.0}
+{'loss': 1.4075, 'learning_rate': 7.978227060653188e-06, 'epoch': 1.01}
+{'loss': 1.3562, 'learning_rate': 7.822706065318819e-06, 'epoch': 1.09}
+{'loss': 1.36, 'learning_rate': 7.667185069984448e-06, 'epoch': 1.17}
+ 23%|████████████████████████▎                                                                               | 1500/6430 [09:45<09:16,  8.86it/s]Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 512, 'num_beams': 4, 'bad_words_ids': [[80034]], 'forced_eos_token_id': 0}
+{'loss': 1.3601, 'learning_rate': 7.511664074650078e-06, 'epoch': 1.24}
+{'loss': 1.3691, 'learning_rate': 7.3561430793157085e-06, 'epoch': 1.32}
+{'loss': 1.3775, 'learning_rate': 7.2006220839813375e-06, 'epoch': 1.4}
+{'loss': 1.3645, 'learning_rate': 7.045101088646968e-06, 'epoch': 1.48}
+{'loss': 1.366, 'learning_rate': 6.889580093312598e-06, 'epoch': 1.56}
+ 31%|████████████████████████████████▎                                                                       | 2000/6430 [10:44<08:14,  8.95it/s]Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 512, 'num_beams': 4, 'bad_words_ids': [[80034]], 'forced_eos_token_id': 0}
+{'loss': 1.361, 'learning_rate': 6.734059097978227e-06, 'epoch': 1.63}
+{'loss': 1.3729, 'learning_rate': 6.578538102643858e-06, 'epoch': 1.71}
+{'loss': 1.3392, 'learning_rate': 6.423017107309487e-06, 'epoch': 1.79}
+{'loss': 1.3437, 'learning_rate': 6.2674961119751176e-06, 'epoch': 1.87}
+{'loss': 1.3574, 'learning_rate': 6.1119751166407474e-06, 'epoch': 1.94}
+ 39%|████████████████████████████████████████▍                                                               | 2500/6430 [11:44<07:21,  8.89it/s]Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 512, 'num_beams': 4, 'bad_words_ids': [[80034]], 'forced_eos_token_id': 0}
+ 40%|█████████████████████████████████████████▌                                                              | 2571/6430 [11:55<08:26,  7.62it/s]
+
+
+
+{'eval_loss': 1.1060513257980347, 'eval_bleu': 34.1367, 'eval_gen_len': 11.1317, 'eval_runtime': 405.1533, 'eval_samples_per_second': 66.641, 'eval_steps_per_second': 0.795,
+'epoch': 2.0}
+{'loss': 1.3622, 'learning_rate': 5.9564541213063764e-06, 'epoch': 2.02}
+{'loss': 1.3196, 'learning_rate': 5.800933125972007e-06, 'epoch': 2.1}
+{'loss': 1.3211, 'learning_rate': 5.645412130637636e-06, 'epoch': 2.18}
+{'loss': 1.3171, 'learning_rate': 5.489891135303267e-06, 'epoch': 2.26}
+{'loss': 1.3225, 'learning_rate': 5.334370139968896e-06, 'epoch': 2.33}
+ 47%|██████████████████████████████████████████████████████████████                                                                       | 3000/6430 [19:29<06:29,  8.81it/s]Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 512, 'num_beams': 4, 'bad_words_ids': [[80034]], 'forced_eos_token_id': 0}
+{'loss': 1.3361, 'learning_rate': 5.178849144634526e-06, 'epoch': 2.41}
+{'loss': 1.3076, 'learning_rate': 5.0233281493001565e-06, 'epoch': 2.49}
+{'loss': 1.3313, 'learning_rate': 4.8678071539657855e-06, 'epoch': 2.57}
+{'loss': 1.3108, 'learning_rate': 4.712286158631415e-06, 'epoch': 2.64}
+{'loss': 1.3111, 'learning_rate': 4.556765163297045e-06, 'epoch': 2.72}
+ 54%|████████████████████████████████████████████████████████████████████████▍                                                            | 3500/6430 [20:28<05:27,  8.96it/s]Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 512, 'num_beams': 4, 'bad_words_ids': [[80034]], 'forced_eos_token_id': 0}
+{'loss': 1.322, 'learning_rate': 4.401244167962675e-06, 'epoch': 2.8}
+{'loss': 1.3201, 'learning_rate': 4.245723172628305e-06, 'epoch': 2.88}
+{'loss': 1.3247, 'learning_rate': 4.090202177293935e-06, 'epoch': 2.95}
+{'eval_loss': 1.103013038635254, 'eval_bleu': 34.2034, 'eval_gen_len': 11.1094, 'eval_runtime': 406.2136, 'eval_samples_per_second': 66.468, 'eval_steps_per_second': 0.793, '
+epoch': 3.0}
+{'loss': 1.304, 'learning_rate': 3.934681181959565e-06, 'epoch': 3.03}
+{'loss': 1.2862, 'learning_rate': 3.779160186625195e-06, 'epoch': 3.11}
+ 62%|██████████████████████████████████████████████████████████████████████████████████▋                                                  | 4000/6430 [28:14<04:24,  9.18it/s]Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 512, 'num_beams': 4, 'bad_words_ids': [[80034]], 'forced_eos_token_id': 0}
+{'loss': 1.2997, 'learning_rate': 3.623639191290825e-06, 'epoch': 3.19}
+{'loss': 1.2791, 'learning_rate': 3.4681181959564543e-06, 'epoch': 3.27}
+{'loss': 1.3025, 'learning_rate': 3.312597200622084e-06, 'epoch': 3.34}
+{'loss': 1.2886, 'learning_rate': 3.157076205287714e-06, 'epoch': 3.42}
+{'loss': 1.2877, 'learning_rate': 3.001555209953344e-06, 'epoch': 3.5}
+ 70%|█████████████████████████████████████████████████████████████████████████████████████████████▊                                        | 4500/6430 [29:14<03:45,  8.56it/s]Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 512, 'num_beams': 4, 'bad_words_ids': [[80034]], 'forced_eos_token_id': 0}
+{'loss': 1.3021, 'learning_rate': 2.846034214618974e-06, 'epoch': 3.58}
+{'loss': 1.2829, 'learning_rate': 2.6905132192846036e-06, 'epoch': 3.65}
+{'loss': 1.3064, 'learning_rate': 2.5349922239502335e-06, 'epoch': 3.73}
+{'loss': 1.3017, 'learning_rate': 2.3794712286158633e-06, 'epoch': 3.81}
+{'loss': 1.2969, 'learning_rate': 2.223950233281493e-06, 'epoch': 3.89}
+ 78%|████████████████████████████████████████████████████████████████████████████████████████████████████████▏                             | 5000/6430 [30:14<02:42,  8.78it/s]Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 512, 'num_beams': 4, 'bad_words_ids': [[80034]], 'forced_eos_token_id': 0}
+{'loss': 1.2985, 'learning_rate': 2.068429237947123e-06, 'epoch': 3.97}
+{'eval_loss': 1.1011160612106323, 'eval_bleu': 34.1395, 'eval_gen_len': 11.11, 'eval_runtime': 405.3283, 'eval_samples_per_second': 66.613, 'eval_steps_per_second': 0.794, 'ep
+och': 4.0}
+{'loss': 1.2871, 'learning_rate': 1.912908242612753e-06, 'epoch': 4.04}
+{'loss': 1.2745, 'learning_rate': 1.7573872472783826e-06, 'epoch': 4.12}
+{'loss': 1.2924, 'learning_rate': 1.6018662519440127e-06, 'epoch': 4.2}
+{'loss': 1.2671, 'learning_rate': 1.4463452566096425e-06, 'epoch': 4.28}
+ 86%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                   | 5500/6430 [37:58<01:41,  9.12it/s]Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 512, 'num_beams': 4, 'bad_words_ids': [[80034]], 'forced_eos_token_id': 0}
+{'loss': 1.274, 'learning_rate': 1.2908242612752722e-06, 'epoch': 4.35}
+{'loss': 1.2695, 'learning_rate': 1.1353032659409022e-06, 'epoch': 4.43}
+{'loss': 1.2897, 'learning_rate': 9.79782270606532e-07, 'epoch': 4.51}
+{'loss': 1.2691, 'learning_rate': 8.242612752721619e-07, 'epoch': 4.59}
+{'loss': 1.2769, 'learning_rate': 6.687402799377916e-07, 'epoch': 4.67}
+ 93%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████         | 6000/6430 [38:58<00:50,  8.44it/s]Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 512, 'num_beams': 4, 'bad_words_ids': [[80034]], 'forced_eos_token_id': 0}
+{'loss': 1.2989, 'learning_rate': 5.132192846034215e-07, 'epoch': 4.74}
+{'loss': 1.2747, 'learning_rate': 3.5769828926905135e-07, 'epoch': 4.82}
+{'loss': 1.2781, 'learning_rate': 2.0217729393468122e-07, 'epoch': 4.9}
+{'loss': 1.2973, 'learning_rate': 4.665629860031105e-08, 'epoch': 4.98}
+{'eval_loss': 1.1014463901519775, 'eval_bleu': 34.1821, 'eval_gen_len': 11.1039, 'eval_runtime': 406.609, 'eval_samples_per_second': 66.403, 'eval_steps_per_second': 0.792, 'e
+poch': 5.0}
+{'train_runtime': 2797.2582, 'train_samples_per_second': 193.041, 'train_steps_per_second': 2.299, 'train_loss': 1.3376151516500565, 'epoch': 5.0}
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6430/6430 [46:37<00:00,  2.30it/s]
+Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 512, 'num_beams': 4, 'bad_words_ids': [[80034]], 'forced_eos_token_id': 0}
+opus-mt-en-it-finetuned/training_args.bin
+opus-mt-en-it-finetuned/target.spm
+opus-mt-en-it-finetuned/source.spm
+opus-mt-en-it-finetuned/vocab.json
+opus-mt-en-it-finetuned/special_tokens_map.json
+opus-mt-en-it-finetuned/tokenizer_config.json
+opus-mt-en-it-finetuned/model.safetensors
+opus-mt-en-it-finetuned/generation_config.json
+opus-mt-en-it-finetuned/config.json
+opus-mt-en-it-finetuned/checkpoint-6000/trainer_state.json
+opus-mt-en-it-finetuned/checkpoint-6000/rng_state.pth
+opus-mt-en-it-finetuned/checkpoint-6000/scheduler.pt
+opus-mt-en-it-finetuned/checkpoint-6000/optimizer.pt
+opus-mt-en-it-finetuned/checkpoint-6000/training_args.bin
+opus-mt-en-it-finetuned/checkpoint-6000/target.spm
+opus-mt-en-it-finetuned/checkpoint-6000/source.spm
+opus-mt-en-it-finetuned/checkpoint-6000/vocab.json
+opus-mt-en-it-finetuned/checkpoint-6000/special_tokens_map.json
+opus-mt-en-it-finetuned/checkpoint-6000/tokenizer_config.json
+opus-mt-en-it-finetuned/checkpoint-6000/model.safetensors
+opus-mt-en-it-finetuned/checkpoint-6000/generation_config.json
+opus-mt-en-it-finetuned/checkpoint-6000/config.json
+opus-mt-en-it-finetuned/checkpoint-5500/trainer_state.json
+opus-mt-en-it-finetuned/checkpoint-5500/rng_state.pth
+opus-mt-en-it-finetuned/checkpoint-5500/scheduler.pt
+opus-mt-en-it-finetuned/checkpoint-5500/optimizer.pt
+opus-mt-en-it-finetuned/checkpoint-5500/training_args.bin
+opus-mt-en-it-finetuned/checkpoint-5500/target.spm
+opus-mt-en-it-finetuned/checkpoint-5500/source.spm
+opus-mt-en-it-finetuned/checkpoint-5500/vocab.json
+opus-mt-en-it-finetuned/checkpoint-5500/special_tokens_map.json
+opus-mt-en-it-finetuned/checkpoint-5500/tokenizer_config.json
+opus-mt-en-it-finetuned/checkpoint-5500/model.safetensors
+opus-mt-en-it-finetuned/checkpoint-5500/generation_config.json
+opus-mt-en-it-finetuned/checkpoint-5500/config.json
+opus-mt-en-it-finetuned/checkpoint-5000/trainer_state.json
+opus-mt-en-it-finetuned/checkpoint-5000/rng_state.pth
+opus-mt-en-it-finetuned/checkpoint-5000/scheduler.pt
+opus-mt-en-it-finetuned/checkpoint-5000/optimizer.pt
+opus-mt-en-it-finetuned/checkpoint-5000/training_args.bin
+opus-mt-en-it-finetuned/checkpoint-5000/target.spm
+opus-mt-en-it-finetuned/checkpoint-5000/source.spm
+opus-mt-en-it-finetuned/checkpoint-5000/vocab.json
+opus-mt-en-it-finetuned/checkpoint-5000/special_tokens_map.json
+opus-mt-en-it-finetuned/checkpoint-5000/tokenizer_config.json
+opus-mt-en-it-finetuned/checkpoint-5000/model.safetensors
+opus-mt-en-it-finetuned/checkpoint-5000/generation_config.json
+opus-mt-en-it-finetuned/checkpoint-5000/config.json
+['Mi chiamo Sarah, vivo a Londra con la mia famiglia e mi piace tantissimo.']
+root@fbf8b3063406:/workspace/finetune#
+root@fbf8b3063406:/workspace/finetune#
+root@fbf8b3063406:/workspace/finetune#
+root@fbf8b3063406:/workspace/finetune#
+root@fbf8b3063406:/workspace/finetune# tar -czvf opus-mt-en-it-finetuned.tar.gz opus-mt-en-it-finetuned/
+opus-mt-en-it-finetuned/
+opus-mt-en-it-finetuned/training_args.bin
+opus-mt-en-it-finetuned/target.spm
+opus-mt-en-it-finetuned/source.spm
+opus-mt-en-it-finetuned/vocab.json
+opus-mt-en-it-finetuned/special_tokens_map.json
+opus-mt-en-it-finetuned/tokenizer_config.json
+opus-mt-en-it-finetuned/model.safetensors
+opus-mt-en-it-finetuned/generation_config.json
+opus-mt-en-it-finetuned/config.json
+opus-mt-en-it-finetuned/checkpoint-6000/
+opus-mt-en-it-finetuned/checkpoint-6000/trainer_state.json
+opus-mt-en-it-finetuned/checkpoint-6000/rng_state.pth
+opus-mt-en-it-finetuned/checkpoint-6000/scheduler.pt
+opus-mt-en-it-finetuned/checkpoint-6000/optimizer.pt
+opus-mt-en-it-finetuned/checkpoint-6000/training_args.bin
+opus-mt-en-it-finetuned/checkpoint-6000/target.spm
+opus-mt-en-it-finetuned/checkpoint-6000/source.spm
+opus-mt-en-it-finetuned/checkpoint-6000/vocab.json
+opus-mt-en-it-finetuned/checkpoint-6000/special_tokens_map.json
+opus-mt-en-it-finetuned/checkpoint-6000/tokenizer_config.json
+opus-mt-en-it-finetuned/checkpoint-6000/model.safetensors
+opus-mt-en-it-finetuned/checkpoint-6000/generation_config.json
+opus-mt-en-it-finetuned/checkpoint-6000/config.json
+opus-mt-en-it-finetuned/checkpoint-5500/
+opus-mt-en-it-finetuned/checkpoint-5500/trainer_state.json
+opus-mt-en-it-finetuned/checkpoint-5500/rng_state.pth
+opus-mt-en-it-finetuned/checkpoint-5500/scheduler.pt
+opus-mt-en-it-finetuned/checkpoint-5500/optimizer.pt
+opus-mt-en-it-finetuned/checkpoint-5500/training_args.bin
+opus-mt-en-it-finetuned/checkpoint-5500/target.spm
+opus-mt-en-it-finetuned/checkpoint-5500/source.spm
+opus-mt-en-it-finetuned/checkpoint-5500/vocab.json
+opus-mt-en-it-finetuned/checkpoint-5500/special_tokens_map.json
+opus-mt-en-it-finetuned/checkpoint-5500/tokenizer_config.json
+opus-mt-en-it-finetuned/checkpoint-5500/model.safetensors
+opus-mt-en-it-finetuned/checkpoint-5500/generation_config.json
+opus-mt-en-it-finetuned/checkpoint-5500/config.json
+opus-mt-en-it-finetuned/checkpoint-5000/
+opus-mt-en-it-finetuned/checkpoint-5000/trainer_state.json
+opus-mt-en-it-finetuned/checkpoint-5000/rng_state.pth
+opus-mt-en-it-finetuned/checkpoint-5000/scheduler.pt
+opus-mt-en-it-finetuned/checkpoint-5000/optimizer.pt
+opus-mt-en-it-finetuned/checkpoint-5000/training_args.bin
+opus-mt-en-it-finetuned/checkpoint-5000/target.spm
+opus-mt-en-it-finetuned/checkpoint-5000/source.spm
+opus-mt-en-it-finetuned/checkpoint-5000/vocab.json
+opus-mt-en-it-finetuned/checkpoint-5000/special_tokens_map.json
+opus-mt-en-it-finetuned/checkpoint-5000/tokenizer_config.json
+opus-mt-en-it-finetuned/checkpoint-5000/model.safetensors
+opus-mt-en-it-finetuned/checkpoint-5000/generation_config.json
+opus-mt-en-it-finetuned/checkpoint-5000/config.json
