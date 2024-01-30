@@ -70,7 +70,7 @@ args = Seq2SeqTrainingArguments(
     num_train_epochs=5,
     predict_with_generate=True,
     logging_dir="./logs",  # set this to a directory where you want to store logs
-    logging_steps=50,  # log training information every 50 steps
+    logging_steps=100,  # log training information every 50 steps
 )
 
 data_collator = DataCollatorForSeq2Seq(tokenizer, model=model)
