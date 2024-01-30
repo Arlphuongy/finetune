@@ -22,13 +22,13 @@ from transformers import (
 os.environ["WANDB_DISABLED"] = "true"
 
 SOURCE_LANG = "en"
-TARGET_LANG = "de"
+TARGET_LANG = "fr"
 
-raw_datasets = load_dataset("Eugenememe/netflix-en-de")
+raw_datasets = load_dataset("Eugenememe/netflix-en-fr")
 metric = evaluate.load("sacrebleu")
 
 # Tokenizer and model checkpoint
-MODEL_CHECKPOINT = "Helsinki-NLP/opus-mt-en-de"
+MODEL_CHECKPOINT = "Helsinki-NLP/opus-mt-en-fr"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_CHECKPOINT)
 
 PREFIX = ""
@@ -55,11 +55,11 @@ tokenized_datasets = raw_datasets.map(preprocess_function, batched=True)
 
 model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CHECKPOINT)
 
-BATCH_SIZE = 48
+BATCH_SIZE = 64
 MODEL_NAME = MODEL_CHECKPOINT.rsplit("/", maxsplit=1)[-1]
 
 args = Seq2SeqTrainingArguments(
-    f"{MODEL_NAME}-finetuned",
+    output_dir=f"{MODEL_NAME}-finetuned",
     evaluation_strategy="epoch",
     learning_rate=2e-5,
     per_device_train_batch_size=BATCH_SIZE,
@@ -68,6 +68,8 @@ args = Seq2SeqTrainingArguments(
     save_total_limit=3,
     num_train_epochs=5,
     predict_with_generate=True,
+    logging_dir="./logs",  # set this to a directory where you want to store logs
+    logging_steps=50,  # log training information every 50 steps
 )
 
 data_collator = DataCollatorForSeq2Seq(tokenizer, model=model)
