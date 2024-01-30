@@ -54,7 +54,10 @@ def preprocess_function(examples):
 tokenized_datasets = raw_datasets.map(preprocess_function, batched=True)
 
 # Load the model for seq2seq language modeling
-model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CHECKPOINT)
+# model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CHECKPOINT)
+
+CHECKPOINT_PATH = "opus-mt-en-es-finetuned/checkpoint-3582"
+model = AutoModelForSeq2SeqLM.from_pretrained(CHECKPOINT_PATH)
 
 # Define batch size and model name derived from checkpoint
 BATCH_SIZE = 84
