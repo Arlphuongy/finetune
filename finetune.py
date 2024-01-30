@@ -63,7 +63,8 @@ MODEL_NAME = MODEL_CHECKPOINT.rsplit("/", maxsplit=1)[-1]
 # Set training arguments for the model
 args = Seq2SeqTrainingArguments(
     output_dir=f"{MODEL_NAME}-finetuned",
-    evaluation_strategy="steps",
+    evaluation_strategy="epoch",
+    save_strategy="epoch",
     learning_rate=2e-6,
     per_device_train_batch_size=BATCH_SIZE,
     per_device_eval_batch_size=BATCH_SIZE,
@@ -76,8 +77,6 @@ args = Seq2SeqTrainingArguments(
     load_best_model_at_end=True,
     metric_for_best_model="loss",
     greater_is_better=False,
-    save_strategy="epoch",
-    eval_steps=100,
 )
 
 # Create a data collator for handling batch data
