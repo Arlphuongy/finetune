@@ -20,15 +20,15 @@ from transformers import (
 os.environ["WANDB_DISABLED"] = "true"
 
 # Set source and target languages for translation
-SOURCE_LANG = "en"
-TARGET_LANG = "es"
+SOURCE_LANG = "es"
+TARGET_LANG = "en"
 
 # Load dataset and metric for evaluation (BLEU score)
-raw_datasets = load_dataset("Eugenememe/netflix-en-es")
+raw_datasets = load_dataset("Eugenememe/netflix-es-en")
 metric = evaluate.load("sacrebleu")
 
 # Define tokenizer and model checkpoint from Hugging Face
-MODEL_CHECKPOINT = "Helsinki-NLP/opus-mt-en-es"
+MODEL_CHECKPOINT = "Helsinki-NLP/opus-mt-es-en"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_CHECKPOINT)
 
 # Set prefix, maximum input and output lengths for tokenization
@@ -54,10 +54,11 @@ def preprocess_function(examples):
 tokenized_datasets = raw_datasets.map(preprocess_function, batched=True)
 
 # Load the model for seq2seq language modeling
-# model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CHECKPOINT)
+model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CHECKPOINT)
 
-CHECKPOINT_PATH = "opus-mt-en-es-finetuned/checkpoint-3582"
-model = AutoModelForSeq2SeqLM.from_pretrained(CHECKPOINT_PATH)
+# Load the model from a checkpoint
+# CHECKPOINT_PATH = "opus-mt-en-es-finetuned/checkpoint-3582"
+# model = AutoModelForSeq2SeqLM.from_pretrained(CHECKPOINT_PATH)
 
 # Define batch size and model name derived from checkpoint
 BATCH_SIZE = 84
@@ -68,11 +69,11 @@ args = Seq2SeqTrainingArguments(
     output_dir=f"{MODEL_NAME}-finetuned",
     evaluation_strategy="epoch",
     save_strategy="epoch",
-    learning_rate=2e-6,
+    learning_rate=1e-6,
     per_device_train_batch_size=BATCH_SIZE,
     per_device_eval_batch_size=BATCH_SIZE,
     weight_decay=0.01,
-    save_total_limit=3,
+    save_total_limit=1,
     num_train_epochs=5,
     predict_with_generate=True,
     logging_dir="./logs",
