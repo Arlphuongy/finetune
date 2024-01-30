@@ -5,6 +5,7 @@ from transformers import AutoTokenizer
 from datasets import load_dataset, load_metric, DatasetDict
 import datasets
 import random
+from math import sqrt
 import pandas as pd
 import numpy as np
 from IPython.display import display, HTML
@@ -55,13 +56,13 @@ tokenized_datasets = raw_datasets.map(preprocess_function, batched=True)
 
 model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CHECKPOINT)
 
-BATCH_SIZE = 32
+BATCH_SIZE = 84
 MODEL_NAME = MODEL_CHECKPOINT.rsplit("/", maxsplit=1)[-1]
 
 args = Seq2SeqTrainingArguments(
     output_dir=f"{MODEL_NAME}-finetuned",
     evaluation_strategy="epoch",
-    learning_rate=2e-5,
+    learning_rate=1e-5,
     per_device_train_batch_size=BATCH_SIZE,
     per_device_eval_batch_size=BATCH_SIZE,
     weight_decay=0.01,
