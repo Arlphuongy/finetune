@@ -63,7 +63,7 @@ MODEL_NAME = MODEL_CHECKPOINT.rsplit("/", maxsplit=1)[-1]
 # Set training arguments for the model
 args = Seq2SeqTrainingArguments(
     output_dir=f"{MODEL_NAME}-finetuned",
-    evaluation_strategy="epoch",
+    evaluation_strategy="steps",
     learning_rate=2e-6,
     per_device_train_batch_size=BATCH_SIZE,
     per_device_eval_batch_size=BATCH_SIZE,
@@ -77,7 +77,6 @@ args = Seq2SeqTrainingArguments(
     metric_for_best_model="loss",
     greater_is_better=False,
     save_strategy="epoch",
-    evaluation_strategy="steps",
     eval_steps=100,
 )
 
