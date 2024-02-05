@@ -20,15 +20,15 @@ from transformers import (
 os.environ["WANDB_DISABLED"] = "true"
 
 # Set source and target languages for translation
-SOURCE_LANG = "es"
+SOURCE_LANG = "it"
 TARGET_LANG = "en"
 
 # Load dataset and metric for evaluation (BLEU score)
-raw_datasets = load_dataset("Eugenememe/netflix-es-en")
+raw_datasets = load_dataset("Eugenememe/netflix-it-en")
 metric = evaluate.load("sacrebleu")
 
 # Define tokenizer and model checkpoint from Hugging Face
-MODEL_CHECKPOINT = "Helsinki-NLP/opus-mt-es-en"
+MODEL_CHECKPOINT = "Helsinki-NLP/opus-mt-it-en"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_CHECKPOINT)
 
 # Set prefix, maximum input and output lengths for tokenization
@@ -69,7 +69,7 @@ args = Seq2SeqTrainingArguments(
     output_dir=f"{MODEL_NAME}-finetuned",
     evaluation_strategy="epoch",
     save_strategy="epoch",
-    learning_rate=1e-6,
+    learning_rate=2e-5,
     per_device_train_batch_size=BATCH_SIZE,
     per_device_eval_batch_size=BATCH_SIZE,
     weight_decay=0.01,
