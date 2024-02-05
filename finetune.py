@@ -20,15 +20,15 @@ from transformers import (
 os.environ["WANDB_DISABLED"] = "true"
 
 # Set source and target languages for translation
-SOURCE_LANG = "de"
+SOURCE_LANG = "ja"
 TARGET_LANG = "en"
 
 # Load dataset and metric for evaluation (BLEU score)
-raw_datasets = load_dataset("Eugenememe/netflix-de-en")
+raw_datasets = load_dataset("Eugenememe/netflix-ja-en")
 metric = evaluate.load("sacrebleu")
 
 # Define tokenizer and model checkpoint from Hugging Face
-MODEL_CHECKPOINT = "Helsinki-NLP/opus-mt-de-en"
+MODEL_CHECKPOINT = "Helsinki-NLP/opus-mt-ja-en"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_CHECKPOINT)
 
 # Set prefix, maximum input and output lengths for tokenization
