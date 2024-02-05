@@ -61,7 +61,7 @@ model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CHECKPOINT)
 # model = AutoModelForSeq2SeqLM.from_pretrained(CHECKPOINT_PATH)
 
 # Define batch size and model name derived from checkpoint
-BATCH_SIZE = 84
+BATCH_SIZE = 64
 MODEL_NAME = MODEL_CHECKPOINT.rsplit("/", maxsplit=1)[-1]
 
 # Set training arguments for the model
