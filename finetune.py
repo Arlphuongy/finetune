@@ -20,21 +20,21 @@ from transformers import (
 os.environ["WANDB_DISABLED"] = "true"
 
 # Set source and target languages for translation
-SOURCE_LANG = "ko"
-TARGET_LANG = "en"
+SOURCE_LANG = "en"
+TARGET_LANG = "fi"
 
 # Load dataset and metric for evaluation (BLEU score)
-raw_datasets = load_dataset("Eugenememe/netflix-ko-en")
+raw_datasets = load_dataset("Eugenememe/netflix-en-fi")
 metric = evaluate.load("sacrebleu")
 
 # Define tokenizer and model checkpoint from Hugging Face
-MODEL_CHECKPOINT = "Helsinki-NLP/opus-mt-ko-en"
+MODEL_CHECKPOINT = "Helsinki-NLP/opus-mt-en-fi"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_CHECKPOINT)
 
 # Set prefix, maximum input and output lengths for tokenization
 PREFIX = ""
-MAX_INPUT_LENGTH = 128
-MAX_TARGET_LENGTH = 128
+MAX_INPUT_LENGTH = 256
+MAX_TARGET_LENGTH = 256
 
 
 # Preprocessing function to tokenize the dataset
@@ -61,7 +61,7 @@ model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CHECKPOINT)
 # model = AutoModelForSeq2SeqLM.from_pretrained(CHECKPOINT_PATH)
 
 # Define batch size and model name derived from checkpoint
-BATCH_SIZE = 60
+BATCH_SIZE = 84
 MODEL_NAME = MODEL_CHECKPOINT.rsplit("/", maxsplit=1)[-1]
 
 # Set training arguments for the model
@@ -74,7 +74,7 @@ args = Seq2SeqTrainingArguments(
     per_device_eval_batch_size=BATCH_SIZE,
     weight_decay=0.01,
     save_total_limit=1,
-    num_train_epochs=5,
+    num_train_epochs=6,
     predict_with_generate=True,
     logging_dir="./logs",
     logging_steps=100,

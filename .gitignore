@@ -1,2 +1,3 @@
 # Ignore model output directories
 *-finetuned/
+logs/*

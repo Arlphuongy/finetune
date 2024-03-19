@@ -10,3 +10,4 @@ IPython
 sacrebleu
 evaluate
 accelerate
+datasets
