@@ -1,3 +1,7 @@
 # Ignore model output directories
 *-finetuned/
 logs/*
+archive/*
+ct2fast-*/
+logs/
+
