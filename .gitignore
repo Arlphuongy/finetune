@@ -5,3 +5,10 @@ archive/*
 ct2fast-*/
 logs/
 
+.env
+*.conda
+models/
+weights/
+.env
+ct2fast*
+

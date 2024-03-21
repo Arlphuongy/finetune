@@ -11,3 +11,5 @@ sacrebleu
 evaluate
 accelerate
 datasets
+ctranslate2
+hf_hub_ctranslate2
