@@ -1,88 +1,92 @@
-
 Model: Eugenememe/netflix-en-vi
---------------------------------------------------------------------------------
-1. Source: I love you
-   Translation: Anh yêu em
-2. Source: User: How are you doing?
-   Translation: Người dùng: bạn thế nào?
-3. Source: How do you call a fast Flan-ingo?
-   Translation: Làm thế nào để gọi một chiếc Flan-ingo nhanh?
-4. Source: Friedrich Wilhelm Nietzsche was a German philosopher. He began his career as a classical philologist before turning to philosophy.
-   Translation: Friedrich Wilhelm Fletcher là một triết gia người Đức. Ông bắt đầu sự nghiệp của mình với tư cách một nhà chiêm tinh học trước khi chuyển sang triết học.
-5. Source: George Soros Quotes. I'm only rich because I know when I'm wrong. It's not whether you're right or wrong, but how much money you make when you're right and how much you lose when you're wrong
-   Translation: George Soros Quotes. Tôi chỉ giàu vì tôi biết khi tôi sai. Không phải là bạn đúng hay sai, mà là bạn kiếm được bao nhiêu tiền khi bạn đúng và bạn mất bao nhiêu khi sai.
-6. Source: It is much easier to put existing resources to better use, than to develop resources where they do not exist.
-   Translation: Dễ sử dụng nguồn tài nguyên hiện đại hơn nhiều, hơn là phát triển tài nguyên mà họ không tồn tại.
-7. Source: Van Thinh Phat chairwoman Truong My Lan has offered to hand in 13 family-owned assets as compensation for the money she is accused of appropriating from Saigon Commercial Bank.
-   Translation: Nữ chủ tịch Van Dieth Phang My Lan đã đề nghị giao nộp 13 tài sản gia đình để bồi thường số tiền mà cô ấy bị buộc tội phân bổ tài sản từ ngân hàng thương mại Sài Gòn.
-8. Source: Today, before the judges, I promise to submit my shares and the shares of my children and friends to the State Bank of Vietnam for the purpose of managing SCB, she told the People's Court of Ho Chi Minh City Tuesday.
-   Translation: Hôm nay, trước các thẩm phán, tôi hứa sẽ nộp cổ phần của mình và cổ phần của các con và bạn bè của tôi cho Ngân hàng Quốc gia Việt Nam nhằm quản lý SCB, cô ấy đã nói với Tòa án Nhân dân Ho Chi Minh City thứ ba.
---------------------------------------------------------------------------------
-Translation time: 0.319s
+1.   <EN> Van Thinh Phat chairwoman Truong My Lan has offered to hand in 13 family-owned assets as compensation for the money she is accused of appropriating from Saigon Commercial Bank.
+     <VI> Nữ chủ tịch Van Dieth Phang My Lan đã đề nghị giao nộp 13 tài sản gia đình để bồi thường số tiền mà cô ấy bị buộc tội phân bổ tài sản từ ngân hàng thương mại Sài Gòn.
+
+2.   <EN> Today, before the judges, I promise to submit my shares and the shares of my children and friends to the State Bank of Vietnam for the purpose of managing SCB, she told the People's Court of Ho Chi Minh City Tuesday.
+     <VI> Hôm nay, trước các thẩm phán, tôi hứa sẽ nộp cổ phần của mình và cổ phần của các con và bạn bè của tôi cho Ngân hàng Quốc gia Việt Nam nhằm quản lý SCB, cô ấy đã nói với Tòa án Nhân dân Ho Chi Minh City thứ ba.
+
+3.   <EN> Lawyers for Van Thinh Phat chairwoman Truong My Lan request a court review of her embezzlement and bribery charges after prosecutors recommended a death sentence based on the allegations.
+     <VI> Các luật sư cho nữ hiệu trưởng Van Tane Phat Phang My Lan yêu cầu tòa xét lại việc cô ta làm cướp biển và tống tiền sau khi công tố viên đề nghị một bản án tử hình dựa trên cáo buộc.
+
+4.   <EN> The new victory for Indonesia sets the stage for a highly anticipated rematch, scheduled to take place in five days at Hanoi's My Dinh National Stadium. Both teams will be looking to refine their strategies and capitalize on this intense rivalry, with Vietnam aiming to avenge their narrow loss and Indonesia looking to maintain their winning momentum.
+     <VI> Chiến thắng mới cho Indonesia thiết lập lại cuộc thi, dự tính sẽ diễn ra trong năm ngày tại sân vận động quốc gia của Hanoi. Cả hai đội sẽ tìm cách chế ngự chiến lược và chiếm ưu thế trong cuộc chiến dữ dội này, với Việt Nam nhằm trả thù cho mất mát và Indonesia để duy trì đà thắng lợi.
+
+5.   <EN> In a nail-biting World Cup qualifier, Indonesia secured a single-goal victory over Vietnam, thanks to a critical error from the guests' defense. The match saw both teams delivering intense performances, but it was Indonesia who capitalized on their chances.
+     <VI> Trong một cuộc cải cách World Cup, Indonesia đã giành chiến thắng một chiều trước Việt Nam, nhờ vào một lỗi nghiêm trọng từ phòng thủ khách. Trận đấu đã chứng kiến cả hai đội vận hành tích cực, nhưng Indonesia đã đầu tư vào cơ hội của họ.
+
+6.   <EN> Vietnam's benchmark VN-Index rose 1.30% to 1,276.42 points Thursday, highest since early September 2022.
+     <VI> Dấu ấn VN-Index của Việt Nam tăng 1.30% đến 1.276.42 điểm, cao nhất kể từ đầu tháng 9 năm 2022.
+
+7.   <EN> Foreign investors were net sellers to the tune of VND365 billion, mainly selling VNM of dairy giant Vinamilk and MSN of conglomerate Masan Group.
+     <VI> Những nhà đầu tư ngoại quốc là những người bán mạng lưới theo phong cách của Tập đoàn VND365, chủ yếu bán VNM khổng lồ sản xuất nước thải từ sản xuất sản xuất từ sản xuất sữa Vina và MSN thuộc tập đoàn Cộng sản Masan.
+
+8.   <EN> The HNX-Index for stocks on the Hanoi Stock Exchange, home to mid and small caps, rose 1.31%, while the UPCoM-Index for the Unlisted Public Companies Market went up 0.30%.
+     <VI> HNX-Index cho chứng khoán trên thị trường chứng khoán Hanoi, ở giữa và nhỏ, tăng 1.31%, trong khi siêu thị công cộng không đăng ký tăng 0.30%.
+
+9.   <EN> Top congressional negotiators in the early hours of Thursday unveiled the $1.2 trillion spending bill to fund the government through September, though it remained unclear whether Congress would be able to complete action on it in time to avert a brief partial government shutdown over the weekend.
+     <VI> Các đại biểu Quốc hội trong những giờ đầu năm công bố dự luật 1.2 tỷ đô la chi tiêu để tài trợ cho chính phủ cho đến tháng chín, mặc dù vẫn chưa rõ Quốc hội có thể hành động đúng lúc để tạm dừng một phần chính phủ vào cuối tuần hay không.
+
+10.  <EN> Lawmakers are racing to pass the legislation before a Friday midnight deadline in order to prevent a lapse in funds for over half the government, including the Department of Homeland Security, the Pentagon and health agencies. They are already six months behind schedule because of lengthy negotiations to resolve funding and policy disputes.
+     <VI> Những người làm luật đang chạy đua để thông qua dự luật trước khi hạn chót vào tối thứ sáu để ngăn chặn một khoản tiền tài trợ cho hơn một nửa chính phủ, bao gồm Bộ An ninh Nội địa, các cơ quan sức khỏe Lầu Năm Góc và các cơ quan y tế. Họ đã trễ lịch sáu tháng vì các cuộc đàm phán dài hạn để giải quyết vấn đề tài chính và chính sách.
+
+11.  <EN> Democrats and Republicans both highlighted victories in the painstakingly negotiated legislation. Republicans cited as victories funding for Border Patrol agents, additional detention beds run by Immigration and Customs Enforcement, and a provision cutting off aid to the main United Nations agency that provides assistance to Palestinians. Democrats secured funding increases for federal child care and education programs, cancer and Alzheimer’s research.
+     <VI> Cả Đảng Dân Chủ lẫn Cộng Hòa đều nhấn mạnh chiến thắng trong luật thương lượng một cách đáng kể. Những người Cộng hòa đã viện dẫn như các chiến binh tài trợ cho các đặc vụ tuần tra biên giới, thêm các phòng giam do chủ quyền và Hải quan thực hiện, và một phương tiện trợ giúp cho cơ quan chính của Liên Hiệp Quốc cung cấp trợ giúp cho người Pha - lê - tin. Đảng Dân chủ bảo đảm tăng ngân sách chăm sóc trẻ em và giáo dục liên bang, ung thư và nghiên cứu về bệnh Alzheimer.
+
+12.  <EN> The Justice Department joined 16 states and the District of Columbia to file an antitrust lawsuit against Apple on Thursday, the federal government’s most significant challenge to the reach and influence of the company that has put iPhones in the hands of more than a billion people.
+     <VI> Bộ Tư pháp gia nhập 16 bang và Quận Columbia để nộp đơn kiện chống lại Apple vào thứ Năm, thách thức lớn nhất của chính phủ liên bang đối với việc tiếp cận và ảnh hưởng của công ty đưa iPhone vào tay hơn một tỷ người.
+
+13.  <EN> The tech giant prevented other companies from offering applications that compete with Apple products like its digital wallet, which could diminish the value of the iPhone, the government said. Apple’s policies hurt consumers and smaller companies that compete with some of Apple’s services, in the form of “higher prices and less innovation,” the lawsuit said.
+     <VI> Công nghệ khổng lồ ngăn cản các công ty khác đưa ra ứng dụng cạnh tranh với các sản phẩm Apple như ví kỹ thuật số của iPhone, có thể làm giảm giá trị của iPhone, chính phủ nói. Các chính sách của Apple làm tổn thương khách hàng và các công ty nhỏ hơn so sánh với các dịch vụ của Apple, dưới dạng là “giá trị cao hơn và ít đổi mới hơn, vụ kiện của Michael nói.
+
+14.  <EN> “Each step in Apple’s course of conduct built and reinforced the moat around its smartphone monopoly,” the government said in the lawsuit, which was filed in the U.S. District Court for the District of New Jersey.
+     <VI> “ Mỗi bước trong hành vi của Apple được xây dựng và củng cố thành hào xung quanh độc quyền điện thoại thông thường của nó, theo báo cáo của chính phủ trong vụ kiện được đệ trình tại Tòa án quận New Jersey ở Hoa Kỳ.
+
+Translation time: 0.652s
 ================================================================================
 
-Model: ct2fast-netflix-en-vi
---------------------------------------------------------------------------------
-1. Source: I love you
-   Translation: Anh yêu em
-2. Source: User: How are you doing?
-   Translation: Người dùng: bạn thế nào?
-3. Source: How do you call a fast Flan-ingo?
-   Translation: Làm sao gọi nhanh được một chiếc Flan-ingo?
-4. Source: Friedrich Wilhelm Nietzsche was a German philosopher. He began his career as a classical philologist before turning to philosophy.
-   Translation: Friedrich Wilhelm film là một triết gia người Đức. Ông bắt đầu sự nghiệp của một nhà khoa học khoa học khoa học trước khi chuyển sang triết học.
-5. Source: George Soros Quotes. I'm only rich because I know when I'm wrong. It's not whether you're right or wrong, but how much money you make when you're right and how much you lose when you're wrong
-   Translation: George Soros Quotes. Tôi chỉ giàu vì tôi biết khi nào tôi sai. Không phải là bạn đúng hay sai, mà là bạn kiếm được bao nhiêu tiền khi bạn đúng và bạn mất bao nhiêu khi sai.
-6. Source: It is much easier to put existing resources to better use, than to develop resources where they do not exist.
-   Translation: Dễ sử dụng nguồn tài nguyên hiện đại hơn nhiều, hơn là phát triển tài nguyên mà họ không tồn tại.
-7. Source: Van Thinh Phat chairwoman Truong My Lan has offered to hand in 13 family-owned assets as compensation for the money she is accused of appropriating from Saigon Commercial Bank.
-   Translation: Nữ chủ tịch Van Dinth Phang My Lan đã đề nghị giao nộp 13 tài sản gia đình để bồi thường số tiền mà cô ấy bị buộc tội phân bổ tài sản từ ngân hàng thương mại Sài Gòn.
-8. Source: Today, before the judges, I promise to submit my shares and the shares of my children and friends to the State Bank of Vietnam for the purpose of managing SCB, she told the People's Court of Ho Chi Minh City Tuesday.
-   Translation: Hôm nay, trước các thẩm phán, tôi hứa sẽ chia sẻ cổ phần của mình và cổ phần của con cái và bạn bè của tôi cho Ngân hàng Quốc gia Việt Nam nhằm quản lý SCB, cô ấy đã nói với Tòa án Nhân dân Ho Chi Minh City thứ ba.
---------------------------------------------------------------------------------
-Translation time: 0.117s
+Model: opus-mt-en-vi-finetuned
+1.   <EN> Van Thinh Phat chairwoman Truong My Lan has offered to hand in 13 family-owned assets as compensation for the money she is accused of appropriating from Saigon Commercial Bank.
+     <VI> Nữ chủ tịch Văn Phương Văn Lan đã đề nghị giao nộp 13 tài sản gia đình để bồi thường cho số tiền cô bị buộc tội phân bổ tài sản từ ngân hàng xã hội Sài Gòn.
+
+2.   <EN> Today, before the judges, I promise to submit my shares and the shares of my children and friends to the State Bank of Vietnam for the purpose of managing SCB, she told the People's Court of Ho Chi Minh City Tuesday.
+     <VI> Hôm nay, trước các thẩm phán, tôi hứa sẽ nộp cổ phiếu của mình và cổ phiếu của các con và bạn bè của tôi cho Ngân hàng Nhà nước Việt Nam nhằm mục đích quản lý SCB, bà đã nói với Tòa án Nhân dân thành phố Hồ Chí Minh hôm thứ Ba.
+
+3.   <EN> Lawyers for Van Thinh Phat chairwoman Truong My Lan request a court review of her embezzlement and bribery charges after prosecutors recommended a death sentence based on the allegations.
+     <VI> Các luật sư của nữ chủ tịch Văn Phương Phat đã yêu cầu tòa án xem xét các cáo buộc biển thủ và hối lộ của cô sau khi các công tố viên đề nghị bản án tử hình dựa trên cáo buộc này.
+
+4.   <EN> The new victory for Indonesia sets the stage for a highly anticipated rematch, scheduled to take place in five days at Hanoi's My Dinh National Stadium. Both teams will be looking to refine their strategies and capitalize on this intense rivalry, with Vietnam aiming to avenge their narrow loss and Indonesia looking to maintain their winning momentum.
+     <VI> Chiến thắng mới của Indonesia đã đặt ra sân khấu cho một trận đấu tái đấu được dự kiến cao, dự kiến sẽ diễn ra trong năm ngày tại sân vận động quốc gia của Hà Nội. Cả hai đội sẽ tìm cách cải thiện chiến lược và thủ đoạn thành công trong cuộc tranh chấp gay gắt này, với Việt Nam nhằm trả thù cho sự thua lỗ hẹp của họ và Indonesia tìm cách duy trì đà thắng.
+
+5.   <EN> In a nail-biting World Cup qualifier, Indonesia secured a single-goal victory over Vietnam, thanks to a critical error from the guests' defense. The match saw both teams delivering intense performances, but it was Indonesia who capitalized on their chances.
+     <VI> Trong vòng loại World Cup, Indonesia đã giành chiến thắng một chiều trước Việt Nam, nhờ vào một sai lầm nghiêm trọng từ phòng thủ của khách. Trận đấu đã chứng kiến cả hai đội vận hành các màn trình diễn kịch liệt, nhưng Indonesia đã tận dụng cơ hội của họ.
+
+6.   <EN> Vietnam's benchmark VN-Index rose 1.30% to 1,276.42 points Thursday, highest since early September 2022.
+     <VI> Điểm chuẩn VN-Index của Việt Nam tăng 1,30% lên 1.076.42 điểm vào thứ Năm, cao nhất kể từ đầu tháng 9 năm 2022.
+
+7.   <EN> Foreign investors were net sellers to the tune of VND365 billion, mainly selling VNM of dairy giant Vinamilk and MSN of conglomerate Masan Group.
+     <VI> Các nhà đầu tư nước ngoài là những người bán mạng theo nhịp điệu của 365 tỷ đồng, chủ yếu bán VNM khổng lồ sữa Vinamilk và MSN của tập đoàn Masan Group.
+
+8.   <EN> The HNX-Index for stocks on the Hanoi Stock Exchange, home to mid and small caps, rose 1.31%, while the UPCoM-Index for the Unlisted Public Companies Market went up 0.30%.
+     <VI> TP HNX-Index cho các cổ phiếu của Sở giao dịch chứng khoán Hà Nội, nhà cửa đến giữa và nhỏ, tăng 1,31%, trong khi đó việc tăng CoM-Index cho Thị trường Công ty Không đăng ký tăng 0,30%.
+
+9.   <EN> Top congressional negotiators in the early hours of Thursday unveiled the $1.2 trillion spending bill to fund the government through September, though it remained unclear whether Congress would be able to complete action on it in time to avert a brief partial government shutdown over the weekend.
+     <VI> Các đại biểu Quốc hội hàng đầu trong những giờ đầu thứ Năm đã công bố dự luật 1,2 nghìn tỷ USD chi tiêu để tài trợ cho chính phủ cho đến tháng 9, mặc dù vẫn chưa rõ liệu Quốc hội có thể hoàn thành hành động với dự án này kịp thời để ngăn chặn việc đóng cửa một phần của chính phủ trong cuối tuần hay không.
+
+10.  <EN> Lawmakers are racing to pass the legislation before a Friday midnight deadline in order to prevent a lapse in funds for over half the government, including the Department of Homeland Security, the Pentagon and health agencies. They are already six months behind schedule because of lengthy negotiations to resolve funding and policy disputes.
+     <VI> Các nhà lập pháp đang chạy đua để thông qua pháp luật trước thời hạn cuối tuần thứ Sáu nhằm ngăn chặn sự sụt giảm ngân quỹ cho hơn một nửa chính phủ, bao gồm Bộ An ninh Nội địa, cơ quan y tế Lầu Năm Góc và các cơ quan y tế. Họ đã trễ lịch sáu tháng vì các cuộc đàm phán dài để giải quyết các tranh chấp về tài trợ và chính sách.
+
+11.  <EN> Democrats and Republicans both highlighted victories in the painstakingly negotiated legislation. Republicans cited as victories funding for Border Patrol agents, additional detention beds run by Immigration and Customs Enforcement, and a provision cutting off aid to the main United Nations agency that provides assistance to Palestinians. Democrats secured funding increases for federal child care and education programs, cancer and Alzheimer’s research.
+     <VI> Đảng Dân chủ và đảng Cộng hòa đều nêu bật chiến thắng trong luật thương lượng. Cộng hòa đã trích dẫn như là chiến thắng tài trợ cho các đặc vụ tuần tra biên giới, thêm các giường giam giữ do nhập cảnh và Hải quan thực hiện, và một giao dịch cung cấp viện trợ cho cơ quan chính của Liên Hợp Quốc cung cấp hỗ trợ cho người Palestine. Đảng Dân chủ đã đảm bảo tăng nguồn tài trợ cho các chương trình chăm sóc và giáo dục liên bang, ung thư và nghiên cứu của Alzheimer.
+
+12.  <EN> The Justice Department joined 16 states and the District of Columbia to file an antitrust lawsuit against Apple on Thursday, the federal government’s most significant challenge to the reach and influence of the company that has put iPhones in the hands of more than a billion people.
+     <VI> Bộ Tư pháp đã gia nhập 16 bang và quận Columbia để nộp đơn kiện chống lại Apple vào hôm thứ Năm, thách thức quan trọng nhất của chính phủ liên bang đối với việc tiếp cận và ảnh hưởng của công ty đã đặt iPhone vào tay của hơn một tỷ người.
+
+13.  <EN> The tech giant prevented other companies from offering applications that compete with Apple products like its digital wallet, which could diminish the value of the iPhone, the government said. Apple’s policies hurt consumers and smaller companies that compete with some of Apple’s services, in the form of “higher prices and less innovation,” the lawsuit said.
+     <VI> Chính phủ cho biết gã khổng lồ công nghệ này đã ngăn chặn các công ty khác cung cấp các ứng dụng cạnh tranh với các sản phẩm của Apple như ví kỹ thuật số của họ, có thể làm giảm giá trị của iPhone. Chính sách của Apple làm tổn thương người tiêu dùng và các công ty nhỏ hơn cạnh tranh với một số dịch vụ của Apple, dưới dạng “giá cả cao hơn và ít đổi mới hơn”.
+
+14.  <EN> “Each step in Apple’s course of conduct built and reinforced the moat around its smartphone monopoly,” the government said in the lawsuit, which was filed in the U.S. District Court for the District of New Jersey.
+     <VI> Chính phủ cho biết trong vụ kiện này, được đệ trình tại Tòa án quận quận New Jersey của Hoa Kỳ cho biết: “Mỗi bước trong hành vi hành vi của Apple được xây dựng và củng cố các lỗ hổng xung quanh điện thoại thông minh của mình”.
+
+Translation time: 0.556s
 ================================================================================
 
-Model: Eugenememe/news-en-vi
---------------------------------------------------------------------------------
-1. Source: I love you
-   Translation: Anh yêu em
-2. Source: User: How are you doing?
-   Translation: Người dùng: bạn đang làm gì?
-3. Source: How do you call a fast Flan-ingo?
-   Translation: Làm thế nào để gọi một chiếc Flan-ingo nhanh?
-4. Source: Friedrich Wilhelm Nietzsche was a German philosopher. He began his career as a classical philologist before turning to philosophy.
-   Translation: Friedrich Wilhelm” là một nhà triết học người Đức. Ông bắt đầu sự nghiệp của mình với tư cách là một nhà hiền triết cổ điển trước khi chuyển sang triết học.
-5. Source: George Soros Quotes. I'm only rich because I know when I'm wrong. It's not whether you're right or wrong, but how much money you make when you're right and how much you lose when you're wrong
-   Translation: George Soros Quotes. Tôi chỉ giàu vì tôi biết khi nào tôi sai. Không phải là bạn đúng hay sai, mà là bạn kiếm được bao nhiêu tiền khi bạn đúng và bạn mất bao nhiêu khi bạn sai.
-6. Source: It is much easier to put existing resources to better use, than to develop resources where they do not exist.
-   Translation: Thật dễ dàng hơn nhiều khi sử dụng các nguồn tài nguyên hiện tại tốt hơn nhiều, hơn là phát triển các nguồn lực mà chúng không tồn tại.
-7. Source: Van Thinh Phat chairwoman Truong My Lan has offered to hand in 13 family-owned assets as compensation for the money she is accused of appropriating from Saigon Commercial Bank.
-   Translation: Chủ tịch Văn Phat, Trường Giang My Lan, đã đề nghị giao nộp 13 tài sản sở hữu gia đình để bồi thường cho số tiền mà cô bị buộc tội phân bổ ngân hàng xã hội Sài Gòn.
-8. Source: Today, before the judges, I promise to submit my shares and the shares of my children and friends to the State Bank of Vietnam for the purpose of managing SCB, she told the People's Court of Ho Chi Minh City Tuesday.
-   Translation: Hôm nay, trước các thẩm phán, tôi hứa sẽ nộp cổ phiếu của mình và cổ phiếu của các con và bạn bè của tôi cho Ngân hàng Nhà nước Việt Nam vì mục đích quản lý SCB, cô chia sẻ với Tòa án Nhân dân Thành phố Hồ Chí Minh hôm thứ Ba.
---------------------------------------------------------------------------------
-Translation time: 0.202s
-================================================================================
-
-Model: ct2fast-news-en-vi
---------------------------------------------------------------------------------
-1. Source: I love you
-   Translation: Anh yêu em
-2. Source: User: How are you doing?
-   Translation: Người dùng: bạn đang làm gì?
-3. Source: How do you call a fast Flan-ingo?
-   Translation: Làm thế nào để gọi một chiếc Flan-ingo nhanh?
-4. Source: Friedrich Wilhelm Nietzsche was a German philosopher. He began his career as a classical philologist before turning to philosophy.
-   Translation: Friedrich Wilhelm” là một nhà triết học người Đức. Ông bắt đầu sự nghiệp của mình với tư cách là một nhà từ thiện cổ điển trước khi chuyển sang triết học.
-5. Source: George Soros Quotes. I'm only rich because I know when I'm wrong. It's not whether you're right or wrong, but how much money you make when you're right and how much you lose when you're wrong
-   Translation: George Soros Quotes. Tôi chỉ giàu vì tôi biết khi nào tôi sai. Không phải là bạn đúng hay sai, mà là bạn kiếm được bao nhiêu tiền khi bạn đúng và bạn mất bao nhiêu khi bạn sai.
-6. Source: It is much easier to put existing resources to better use, than to develop resources where they do not exist.
-   Translation: Việc sử dụng nguồn lực hiện tại tốt hơn nhiều thì dễ dàng hơn nhiều, hơn là phát triển các nguồn lực mà họ không tồn tại.
-7. Source: Van Thinh Phat chairwoman Truong My Lan has offered to hand in 13 family-owned assets as compensation for the money she is accused of appropriating from Saigon Commercial Bank.
-   Translation: Chủ tịch Văn Phương Phat, Trường Văn Lan, đã đề nghị giao nộp 13 tài sản sở hữu gia đình để bồi thường cho số tiền mà cô bị buộc tội phân bổ ngân hàng xã hội Sài Gòn.
-8. Source: Today, before the judges, I promise to submit my shares and the shares of my children and friends to the State Bank of Vietnam for the purpose of managing SCB, she told the People's Court of Ho Chi Minh City Tuesday.
-   Translation: Hôm nay, trước các thẩm phán, tôi hứa sẽ nộp cổ phiếu của mình và cổ phiếu của các con và bạn bè của tôi cho Ngân hàng Nhà nước Việt Nam nhằm mục đích quản lý SCB, cô đã nói với Tòa án Nhân dân Thành phố Hồ Chí Minh hôm thứ Ba.
---------------------------------------------------------------------------------
-Translation time: 0.074s
-================================================================================

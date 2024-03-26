@@ -24,17 +24,16 @@ SOURCE_LANG = "en"
 TARGET_LANG = "vi"
 
 # Load dataset and metric for evaluation (BLEU score)
-raw_datasets = load_dataset(f"Eugenememe/news-{SOURCE_LANG}-{TARGET_LANG}")
+raw_datasets = load_dataset(f"Eugenememe/mix-{SOURCE_LANG}-{TARGET_LANG}-500k")
 metric = evaluate.load("sacrebleu")
 
-# Define tokenizer and model checkpoint from Hugging Face
-MODEL_CHECKPOINT = f"Eugenememe/netflix-{SOURCE_LANG}-{TARGET_LANG}"
+# MODEL_CHECKPOINT = f"Eugenememe/netflix-{SOURCE_LANG}-{TARGET_LANG}"
+MODEL_CHECKPOINT = f"Helsinki-NLP/opus-mt-{SOURCE_LANG}-{TARGET_LANG}"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_CHECKPOINT)
 
-# Set prefix, maximum input and output lengths for tokenization
 PREFIX = ""
-MAX_INPUT_LENGTH = 128
-MAX_TARGET_LENGTH = 128
+MAX_INPUT_LENGTH = 256
+MAX_TARGET_LENGTH = 256
 
 
 # Preprocessing function to tokenize the dataset
@@ -61,8 +60,7 @@ model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CHECKPOINT)
 # model = AutoModelForSeq2SeqLM.from_pretrained(CHECKPOINT_PATH)
 
 # Define batch size and model name derived from checkpoint
-BATCH_SIZE = 84
-# BATCH_SIZE = 128
+BATCH_SIZE = 64
 MODEL_NAME = MODEL_CHECKPOINT.rsplit("/", maxsplit=1)[-1]
 
 # Set training arguments for the model
@@ -70,12 +68,12 @@ args = Seq2SeqTrainingArguments(
     output_dir=f"{MODEL_NAME}-finetuned",
     evaluation_strategy="epoch",
     save_strategy="epoch",
-    learning_rate=2e-5,
+    learning_rate=1e-4,
     per_device_train_batch_size=BATCH_SIZE,
     per_device_eval_batch_size=BATCH_SIZE,
     weight_decay=0.01,
     save_total_limit=1,
-    num_train_epochs=6,
+    num_train_epochs=10,
     predict_with_generate=True,
     logging_dir="./logs",
     logging_steps=100,

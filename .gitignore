@@ -12,3 +12,6 @@ weights/
 .env
 ct2fast*
 
+mix-en-vi-200k-256/
+opus-mt-*
+
