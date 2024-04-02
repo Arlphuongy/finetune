@@ -21,10 +21,11 @@ os.environ["WANDB_DISABLED"] = "true"
 
 # Set source and target languages for translation
 SOURCE_LANG = "en"
-TARGET_LANG = "vi"
+TARGET_LANG = "es"
 
 # Load dataset and metric for evaluation (BLEU score)
-raw_datasets = load_dataset(f"Eugenememe/mix-{SOURCE_LANG}-{TARGET_LANG}-500k")
+# raw_datasets = load_dataset(f"Eugenememe/mix-{SOURCE_LANG}-{TARGET_LANG}-1m")
+raw_datasets = load_dataset(f"Eugenememe/mix-en-es-1m")
 metric = evaluate.load("sacrebleu")
 
 # MODEL_CHECKPOINT = f"Eugenememe/netflix-{SOURCE_LANG}-{TARGET_LANG}"
@@ -68,12 +69,12 @@ args = Seq2SeqTrainingArguments(
     output_dir=f"{MODEL_NAME}-finetuned",
     evaluation_strategy="epoch",
     save_strategy="epoch",
-    learning_rate=1e-4,
+    learning_rate=2e-5,
     per_device_train_batch_size=BATCH_SIZE,
     per_device_eval_batch_size=BATCH_SIZE,
     weight_decay=0.01,
     save_total_limit=1,
-    num_train_epochs=10,
+    num_train_epochs=6,
     predict_with_generate=True,
     logging_dir="./logs",
     logging_steps=100,
