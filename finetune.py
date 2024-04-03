@@ -21,11 +21,11 @@ os.environ["WANDB_DISABLED"] = "true"
 
 # Set source and target languages for translation
 SOURCE_LANG = "en"
-TARGET_LANG = "es"
+TARGET_LANG = "fr"
 
 # Load dataset and metric for evaluation (BLEU score)
 # raw_datasets = load_dataset(f"Eugenememe/mix-{SOURCE_LANG}-{TARGET_LANG}-1m")
-raw_datasets = load_dataset(f"Eugenememe/mix-en-es-1m")
+raw_datasets = load_dataset("Eugenememe/mix-en-fr-1m")
 metric = evaluate.load("sacrebleu")
 
 # MODEL_CHECKPOINT = f"Eugenememe/netflix-{SOURCE_LANG}-{TARGET_LANG}"

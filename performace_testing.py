@@ -111,11 +111,11 @@ if __name__ == "__main__":
                 ):  # Check if line is not empty and has more than 20 characters
                     target_list.append(line)
 
-    add_texts_from_file("content.txt", src_texts)
+    add_texts_from_file("context_es.txt", src_texts)
 
     # print_source_texts(src_texts)
-    translate_with_opus_mt(src_texts, "Eugenememe/netflix-en-vi", "netflix_en_vi.log")
+    translate_with_opus_mt(src_texts, "Eugenememe/netflix-es-en", "netflix_es_en.log")
     # translate_with_ct2fast_model(src_texts, "ct2fast-netflix-en-vi")
     # translate_with_opus_mt(src_texts, "Eugenememe/news-en-vi")
     # translate_with_ct2fast_model(src_texts, "ct2fast-news-en-vi")
-    translate_with_opus_mt(src_texts, "Eugenememe/mix-en-vi-1m", "mix_en_vi_1m.log")
+    translate_with_opus_mt(src_texts, "Eugenememe/mix-es-en-1m", "mix_es_en_1m.log")
