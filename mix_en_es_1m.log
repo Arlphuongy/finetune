@@ -1,44 +1,184 @@
-Model: Eugenememe/mix-es-en-1m
-The president of Grupo Inmobiliario Torres Doradas, Carmen Sánchez, has pledged to hand over 13 family-owned assets as compensation for the money she is accused of having diverted from the Commercial Bank of Saigon.
-The Old Quarter of Madrid hosts a cultural tapestry, where centuries-old architecture sits next to vibrant market streets, offering a look at Spain's rich heritage.
-The annual flamenco festival in Seville shows the beauty and evolution of traditional Spanish dance, attracting participants from all over the country.
-Spain's national football team achieved a victory against Portugal, unleashing celebrations on the streets of Barcelona and reigniting national pride in sport.
-The new highway that connects Madrid with Valencia has significantly reduced travel time, strengthening economic and tourist ties between the two cities.
-Spanish street food, known for its diversity and flavor, gains international fame, with dishes such as Tapas and Paella leading the culinary charge.
-Valencia's Artificial Fire Festival dazzles viewers with a spectacular display of pyrotechnics, set in the context of the Turia River.
-Concerns about the environmental impact of single-use plastics in Spain motivate local communities and businesses to adopt more sustainable practices.
-The discovery of ancient artifacts in Andalusia offers new perspectives on Spain's historic trade routes and early civilizations.
-Spain's tech startups are gaining momentum, with Barcelona emerging as a vibrant center of innovation and entrepreneurship in Europe.
-The introduction of a new wildlife conservation law aims to protect Spain's diverse ecosystems and endangered species, reflecting growing environmental awareness.
-Traditional Spanish musical genres such as Flamingo and Jota are experiencing a renaissance, attracting younger audiences and preserving cultural heritage.
-The culture of Spanish coffee, characterized by its unique methods of making and robust flavors, continues to captivate coffee enthusiasts around the world.
-Concerns about air quality in Madrid drive government and community initiatives to promote greener transport options and urban afforestation projects.
-Spain's film industry is experiencing a renaissance, with local filmmakers gaining international recognition for stories exploring the country's history and contemporary social problems.
-The expansion of renewable energy projects in Spain, including solar and wind, marks a significant shift towards sustainable development.
-Barcelona's architecture is a mix of Gothic buildings, Gaudí's modernist buildings and contemporary constructions, reflecting the city's dynamic history and growth.
-The resurgence of traditional Spanish handicrafts, such as pottery and bollillo lace, supports rural communities and preserves ancestral artistic techniques.
-Spain's commitment to education reform is evident in its efforts to modernize the curriculum, emphasize critical thinking skills and expand access to quality education for all children.
-The growing popularity of Spanish literature abroad attracts global attention to the country's rich literary traditions and contemporary voices.
-The April Fair in Seville transforms the city into a show of color, music and dance, highlighting the rich folk tradition of Andalusia.
-The Prado Museum in Madrid attracts art lovers from all over the world with its impressive collection of masterpieces of European painting.
-Tomatina, an annual tomato battle in Buñol, has become an iconic Spanish event that attracts international visitors in search of unusual fun.
-Antoni Gaudí's modernist architecture in Barcelona, especially the Sagrada Familia, symbolizes Catalan innovation and creativity.
-The wineries of La Rioja offer unique enoturistic experiences, immersing visitors in the world of world-renowned Spanish wine.
-The Camino de Santiago, an ancient pilgrimage route, continues to attract hikers from all over the world with its mixture of spirituality and natural beauty.
-The Canary Islands are known for their eternal spring climate, volcanic landscapes and pristine beaches, making them a main tourist destination.
-The San Sebastian Film Festival is a highlight event on Spain's cultural calendar, attracting filmmakers and film fans from around the world.
-The revitalization of the Alhambra in Granada highlights the Islamic influence on Spanish history and its unique fusion of cultures.
-The Faults of Valencia, with their impressive stone cardboard figures and fireworks, celebrate the arrival of spring with art and pyrotechnics.
-The rise of molecular gastronomy in Spain, led by chefs such as Ferran Adrià, has revolutionized the world's culinary scene.
-The beaches of Price on the Costa de la Luz are a paradise for windsurfers and kitesurfers, thanks to their strong and constant winds.
-The conservation of the Iberian lynx in Andalusia demonstrates Spain's commitment to the protection of its unique biodiversity.
-The Altamira caves in Cantabria, known for their prehistoric cave paintings, offer a window to Europe's first inhabitants.
-The Spanish fashion industry, with figures such as Balenciaga and Loewe, has gained recognition for its innovation and quality.
-AVE, Spain's high-speed train, has transformed domestic transport, connecting major cities in a matter of hours.
-Electronic music festivals in Ibiza have consolidated the island as a global destination for music and nightlife lovers.
-The push towards smart and sustainable cities is seen in innovative projects in Barcelona, which seek to improve the quality of urban life.
-The siesta tradition, although in decline, remains an interesting cultural aspect that reflects the pace of Spanish life.
-The reintroduction of brown bears into the Pyrenees shows successful efforts in the conservation of endangered native species.
-Translation time: 0.452s
+Model: Eugenememe/mix-en-es-1m
+1.   <en> The Louvre Museum in Paris dazzles with a new digital exhibit, blending classical art with cutting-edge technology, drawing a global audience to its historic halls.
+     <es> El Museo del Louvre en París deslumbra con una nueva exhibición digital, mezclando el arte clásico con tecnología de vanguardia, atrayendo a una audiencia global a sus históricas salas.
+
+2.   <en> Tokyo's cherry blossom season reaches a vibrant peak, drawing crowds for traditional celebrations amidst the fleeting beauty of sakura blooms.
+     <es> La temporada de flores de cerezo de Tokio alcanza un punto máximo vibrante, atrayendo a multitudes para celebraciones tradicionales entre la belleza fugaz de las flores de sakura.
+
+3.   <en> Brazil's Amazon sees a hopeful reduction in deforestation rates, thanks to impactful conservation policies and international collaborative efforts.
+     <es> La Amazonía de Brasil ve una esperanzada reducción de las tasas de deforestación, gracias a políticas de conservación impactantes y esfuerzos de colaboración internacional.
+
+4.   <en> Silicon Valley's latest startup revolution focuses on enhancing solar panel efficiency, promising a significant leap in sustainable energy solutions.
+     <es> La última revolución de startup de Silicon Valley se centra en mejorar la eficiencia de los paneles solares, prometiendo un salto significativo en las soluciones de energía sostenible.
+
+5.   <en> The Great Barrier Reef shows signs of recovery, with successful coral spawning hinting at resilience in the face of environmental challenges.
+     <es> La Gran Barrera de Coral muestra signos de recuperación, con corales que han tenido éxito y que insinúan resiliencia ante los desafíos ambientales.
+
+6.   <en> Innovative engineering helps Venice combat rising sea levels, preserving its iconic architecture and rich cultural heritage for future generations.
+     <es> La ingeniería innovadora ayuda a Venecia a combatir el aumento del nivel del mar, preservando su icónica arquitectura y rico patrimonio cultural para las generaciones futuras.
+
+7.   <en> South Korea's K-pop phenomenon continues to dominate global music charts, influencing fashion trends and social media across continents.
+     <es> El fenómeno del K-pop en Corea del Sur sigue dominando las listas musicales mundiales, influyendo en las tendencias de la moda y las redes sociales en todos los continentes.
+
+8.   <en> New archaeological finds in Luxor offer fresh insights into ancient Egyptian civilization, sparking interest among scholars and history enthusiasts.
+     <es> Los nuevos hallazgos arqueológicos en Luxor ofrecen nuevos conocimientos sobre la antigua civilización egipcia, lo que despierta interés entre los estudiosos y entusiastas de la historia.
+
+9.   <en> The United Nations Climate Change Conference sets ambitious new global emission reduction targets, with nations pledging to bolster sustainability efforts.
+     <es> La Conferencia de las Naciones Unidas sobre el Cambio Climático establece nuevas y ambiciosas metas mundiales de reducción de emisiones, y las naciones se comprometen a reforzar los esfuerzos de sostenibilidad.
+
+10.  <en> New York's burgeoning tech scene sees a surge in AI innovation, with startups focusing on ethical development and applications across industries.
+     <es> La floreciente escena tecnológica de Nueva York ve un aumento en la innovación de la IA, con nuevas empresas centradas en el desarrollo ético y las aplicaciones en todas las industrias.
+
+11.  <en> Blockchain technology transforms London's financial district, enhancing security and efficiency in banking and financial transactions.
+     <es> La tecnología Blockchain transforma el distrito financiero de Londres, mejorando la seguridad y la eficiencia en las transacciones bancarias y financieras.
+
+12.  <en> Kenya employs drone technology in wildlife reserves to monitor and protect endangered species, showcasing innovative conservation strategies.
+     <es> Kenia emplea tecnología de drones en reservas de vida silvestre para monitorear y proteger especies en peligro de extinción, mostrando estrategias de conservación innovadoras.
+
+13.  <en> Spain's renewable energy sector hits a milestone, supplying over half of the country's power needs with wind and solar, showcasing sustainable progress.
+     <es> El sector de energías renovables de España alcanza un hito, al abastecer de energía eólica y solar a más de la mitad de las necesidades energéticas del país, lo que muestra un progreso sostenible.
+
+14.  <en> Innovative mosquito control techniques lead to a significant reduction in malaria cases in Sub-Saharan Africa, marking a victory for global health initiatives.
+     <es> Las innovadoras técnicas de control de mosquitos conducen a una reducción significativa de los casos de malaria en África subsahariana, lo que marca una victoria para las iniciativas de salud global.
+
+15.  <en> Russia's ambitious Mars moon mission aims to collect samples and analyze their composition, contributing valuable data to space science.
+     <es> La ambiciosa misión rusa de la Luna de Marte tiene como objetivo recolectar muestras y analizar su composición, aportando valiosos datos a la ciencia espacial.
+
+16.  <en> The Netherlands further expands its extensive bicycle lane network, reinforcing its commitment to sustainable and healthy urban transportation.
+     <es> Países Bajos amplía aún más su extensa red de carriles para bicicletas, reforzando su compromiso con el transporte urbano sostenible y saludable.
+
+17.  <en> Antarctica's research stations provide crucial data on climate change, with scientists from around the world collaborating on groundbreaking projects.
+     <es> Las estaciones de investigación de la Antártida proporcionan datos cruciales sobre el cambio climático, y científicos de todo el mundo colaboran en proyectos innovadores.
+
+18.  <en> A breakthrough in Alzheimer's treatment in Germany opens new possibilities, offering hope and potential relief to millions affected worldwide.
+     <es> Un avance en el tratamiento del alzhéimer en Alemania abre nuevas posibilidades, ofreciendo esperanza y potencial alivio a millones de personas afectadas en todo el mundo.
+
+19.  <en> The Middle East's solar farms are set to revolutionize the region's approach to energy, highlighting a shift towards sustainability and innovation.
+     <es> Las granjas solares de Medio Oriente están destinadas a revolucionar el enfoque de la región sobre la energía, destacando un cambio hacia la sostenibilidad y la innovación.
+
+20.  <en> Traditional Japanese tea ceremonies gain international popularity as a mindfulness practice, attracting enthusiasts seeking tranquility and cultural immersion.
+     <es> Las ceremonias tradicionales japonesas del té ganan popularidad internacional como práctica de mindfulness, atrayendo a entusiastas que buscan tranquilidad e inmersión cultural.
+
+21.  <en> The FIFA World Cup in Qatar showcases cutting-edge, eco-friendly stadium designs, setting new standards for sustainable sports event hosting.
+     <es> La Copa Mundial de la FIFA en Qatar muestra diseños de estadios de vanguardia y respetuosos con el medio ambiente, estableciendo nuevos estándares para el alojamiento de eventos deportivos sostenibles.
+
+22.  <en> New Zealand's approach to mental health care, emphasizing community support and nature-based therapies, offers a holistic model for global adoption.
+     <es> El enfoque de Nueva Zelanda sobre la atención de salud mental, haciendo hincapié en el apoyo comunitario y las terapias basadas en la naturaleza, ofrece un modelo holístico para la adopción global.
+
+23.  <en> An international summit in Switzerland addresses the complex challenges of digital privacy and cybersecurity, crucial in the age of emerging technologies.
+     <es> Una cumbre internacional en Suiza aborda los complejos desafíos de la privacidad digital y la ciberseguridad, cruciales en la era de las tecnologías emergentes.
+
+24.  <en> Morocco's efforts to preserve its historic medinas not only enhance cultural tourism but also contribute to the urban revitalization of these ancient spaces.
+     <es> Los esfuerzos de Marruecos por preservar sus históricas medinas no solo potencian el turismo cultural sino que también contribuyen a la revitalización urbana de estos antiguos espacios.
+
+25.  <en> The cleanup of the Great Pacific Garbage Patch, through innovative marine debris collection systems, marks a significant step in ocean conservation efforts.
+     <es> La limpieza de la gran mancha de basura del Pacífico, a través de sistemas innovadores de recolección de desechos marinos, marca un paso significativo en los esfuerzos de conservación de los océanos.
+
+26.  <en> Cuba's vibrant music and dance festivals celebrate the island's rich cultural heritage, drawing artists and enthusiasts from around the globe.
+     <es> Los vibrantes festivales de música y danza de Cuba celebran el rico patrimonio cultural de la isla, atrayendo artistas y entusiastas de todo el mundo.
+
+27.  <en> The Nobel Peace Prize highlights the crucial role of press freedom activists in oppressive regimes, underscoring the fundamental importance of a free press.
+     <es> El Premio Nobel de la Paz destaca el papel crucial de los activistas por la libertad de prensa en los regímenes opresores, subrayando la importancia fundamental de una prensa libre.
+
+28.  <en> Singapore's urban farming initiatives showcase innovative models of sustainable living, integrating green spaces and local food production into city life.
+     <es> Las iniciativas de agricultura urbana de Singapur muestran modelos innovadores de vida sostenible, integrando los espacios verdes y la producción local de alimentos en la vida de la ciudad.
+
+29.  <en> A cultural exchange program between China and Europe fosters mutual understanding, enriching arts and education sectors across continents.
+     <es> Un programa de intercambio cultural entre China y Europa fomenta el entendimiento mutuo, enriqueciendo los sectores de las artes y la educación en todos los continentes.
+
+30.  <en> South Africa's tech industry innovates in clean water access, employing new technologies and community approaches to address this critical issue.
+     <es> La industria tecnológica de Sudáfrica innova en el acceso a agua potable, empleando nuevas tecnologías y enfoques comunitarios para abordar este problema crítico.
+
+31.  <en> The Venice Biennale art exhibition becomes a platform for works addressing global environmental and social issues, sparking discussions and inspiring activism.
+     <es> La exposición de arte Biennale de Venecia se convierte en una plataforma para obras que abordan problemas ambientales y sociales globales, provocando discusiones e inspirando activismo.
+
+32.  <en> An international space station project symbolizes a new era of cooperation in space exploration, with countries from every continent participating.
+     <es> Un proyecto de estación espacial internacional simboliza una nueva era de cooperación en exploración espacial, con la participación de países de todos los continentes.
+
+33.  <en> Argentina's Tango Festival, celebrating the dance's UNESCO status, draws performers and spectators worldwide, highlighting cultural heritage and passion.
+     <es> El Festival de Tango de Argentina, celebrando el estatus de la danza en la Unesco, atrae a artistas y espectadores en todo el mundo, destacando el patrimonio cultural y la pasión.
+
+34.  <en> A Swedish company's breakthrough in battery technology promises to revolutionize electric vehicles and renewable energy storage, marking a significant advancement.
+     <es> El gran avance de una empresa sueca en tecnología de baterías promete revolucionar los vehículos eléctricos y el almacenamiento de energía renovable, lo que marca un avance significativo.
+
+35.  <en> Digitizing ancient manuscripts preserves cultural heritage, making it accessible online to scholars and the public, safeguarding these treasures for future generations.
+     <es> Digitalizar manuscritos antiguos preserva el patrimonio cultural, haciéndolo accesible en línea para los estudiosos y el público, salvaguardando estos tesoros para las generaciones futuras.
+
+36.  <en> An international coral reef protection collaboration results in the largest coral transplantation project, showcasing global efforts to safeguard marine biodiversity.
+     <es> Una colaboración internacional para la protección de los arrecifes de coral da como resultado el mayor proyecto de trasplante de coral, que muestra los esfuerzos mundiales para salvaguardar la biodiversidad marina.
+
+37.  <en> A culinary school in Italy offers scholarships to students from developing countries, promoting the exchange of culinary traditions and fostering global culinary talents.
+     <es> Una escuela culinaria en Italia ofrece becas a estudiantes de países en desarrollo, promoviendo el intercambio de tradiciones culinarias y fomentando talentos culinarios globales.
+
+38.  <en> A new international treaty focuses on protecting indigenous rights, preserving traditional knowledge and languages, and acknowledging the importance of cultural heritage.
+     <es> Un nuevo tratado internacional se centra en proteger los derechos indígenas, preservar el conocimiento y las lenguas tradicionales y reconocer la importancia del patrimonio cultural.
+
+39.  <en> Independent films exploring themes of migration and identity highlight the global interconnectedness and shared human experiences, enriching the global film festival circuit.
+     <es> Las películas independientes que exploran temas de migración e identidad resaltan la interconexión global y las experiencias humanas compartidas, enriqueciendo el circuito global de festivales de cine.
+
+40.  <en> Virtual reality recreates historical sites and events, offering immersive educational experiences and bringing history to life for students worldwide.
+     <es> La realidad virtual recrea sitios y eventos históricos, ofreciendo experiencias educativas inmersivas y dando vida a la historia para los estudiantes en todo el mundo.
+
+41.  <en> A wildlife corridor in India aims to connect fragmented habitats, ensuring the safe passage of tigers and other species, highlighting the importance of ecological connectivity.
+     <es> Un corredor de vida silvestre en India tiene como objetivo conectar hábitats fragmentados, garantizando el paso seguro de tigres y otras especies, destacando la importancia de la conectividad ecológica.
+
+42.  <en> Colombia's international poetry festival celebrates the transformative power of words in promoting peace and reconciliation, drawing poets and enthusiasts from around the world.
+     <es> El festival internacional de poesía de Colombia celebra el poder transformador de las palabras en la promoción de la paz y la reconciliación, sacando poetas y entusiastas de todo el mundo.
+
+43.  <en> The WHO's global campaign against antibiotic resistance emphasizes the responsible use of antibiotics, addressing one of the most pressing health challenges of our time.
+     <es> La campaña global de la OMS contra la resistencia a los antibióticos hace hincapié en el uso responsable de los antibióticos, abordando uno de los desafíos de salud más apremiantes de nuestro tiempo.
+
+44.  <en> Paris Fashion Week's focus on sustainable fashion showcases eco-friendly materials and ethical production, influencing the global fashion industry towards sustainability.
+     <es> El enfoque de la Semana de la Moda de París en la moda sostenible muestra materiales ecológicos y producción ética, influyendo en la industria mundial de la moda hacia la sostenibilidad.
+
+45.  <en> The New Orleans International Jazz Festival highlights the evolution of jazz, influenced by African, Caribbean, and Latin American music, celebrating its rich and diverse heritage.
+     <es> El Festival Internacional de Jazz de Nueva Orleans destaca la evolución del jazz, influenciado por la música africana, caribeña y latinoamericana, celebrando su rica y diversa herencia.
+
+46.  <en> In Germany, a collaborative research project between major universities and automotive companies has led to the development of a groundbreaking electric vehicle battery, boasting an unprecedented range and charging speed, setting a new standard for the global electric vehicle industry.
+     <es> En Alemania, un proyecto de investigación colaborativa entre las principales universidades y empresas automotriz ha llevado al desarrollo de una innovadora batería de vehículos eléctricos, que cuenta con un rango y una velocidad de carga sin precedentes, estableciendo un nuevo estándar para la industria mundial de vehículos eléctricos.
+
+47.  <en> Vietnam's government has announced a significant investment in renewable energy infrastructure, focusing on solar and wind power, aiming to achieve 40% of its energy production from renewable sources by 2030, in a major push towards sustainability and environmental responsibility.
+     <es> El gobierno de Vietnam anunció una inversión significativa en infraestructura de energía renovable, centrándose en la energía solar y eólica, con el objetivo de lograr el 40% de su producción energética a partir de fuentes renovables para 2030, en un gran impulso hacia la sostenibilidad y la responsabilidad medioambiental.
+
+48.  <en> China has launched the world's first quantum satellite, marking a significant milestone in the field of quantum communication; this technological advancement could revolutionize data security and satellite communication, positioning China as a leader in the global space race.
+     <es> China ha lanzado el primer satélite cuántico del mundo, lo que marca un hito significativo en el campo de la comunicación cuántica; este avance tecnológico podría revolucionar la seguridad de datos y la comunicación satelital, posicionando a China como líder en la carrera espacial global.
+
+49.  <en> Japan's robotics firms have introduced a new generation of personal assistant robots designed to provide companionship and assistance to the elderly, reflecting the country's innovative approach to addressing its aging population challenge through technology.
+     <es> Las firmas de robótica de Japón han introducido una nueva generación de robots asistentes personales diseñados para brindar compañía y asistencia a las personas mayores, lo que refleja el enfoque innovador del país para abordar su desafío de población envejecida a través de la tecnología.
+
+50.  <en> South Korea's entertainment industry has once again set a global trend with the release of a new television series that blends traditional Korean folklore with modern storytelling, captivating audiences worldwide and showcasing the richness of Korean culture.
+     <es> La industria del entretenimiento de Corea del Sur ha vuelto a marcar una tendencia mundial con el lanzamiento de una nueva serie de televisión que mezcla el folclore tradicional coreano con la narración moderna, cautivando al público en todo el mundo y mostrando la riqueza de la cultura coreana.
+
+51.  <en> Thailand's tourism authority has unveiled a new campaign aimed at promoting eco-tourism and cultural preservation, inviting travelers to explore the country's hidden gems beyond its famous beaches, in an effort to distribute tourism benefits more evenly and sustainably.
+     <es> La autoridad turística de Tailandia ha presentado una nueva campaña destinada a promover el ecoturismo y la preservación cultural, invitando a los viajeros a explorar las gemas ocultas del país más allá de sus famosas playas, en un esfuerzo por distribuir los beneficios turísticos de manera más uniforme y sostenible.
+
+52.  <en> Spain's government has passed a landmark environmental law, aiming to cut carbon emissions by 50% within the next decade; the law includes measures such as expanding green spaces in urban areas and investing heavily in public transportation and renewable energy.
+     <es> El gobierno de España ha aprobado una ley medioambiental histórica, con el objetivo de reducir las emisiones de carbono en un 50% dentro de la próxima década; la ley incluye medidas como la ampliación de espacios verdes en áreas urbanas e invertir fuertemente en transporte público y energía renovable.
+
+53.  <en> In Brazil, a massive reforestation project in the Amazon rainforest has been launched, with the goal of planting 50 million trees by 2025; this initiative not only aims to combat deforestation but also to restore biodiversity and support indigenous communities.
+     <es> En Brasil se ha puesto en marcha un proyecto de reforestación masiva en la selva amazónica, con el objetivo de plantar 50 millones de árboles para 2025; esta iniciativa no solo tiene como objetivo combatir la deforestación sino también restaurar la biodiversidad y apoyar a las comunidades indígenas.
+
+54.  <en> The Italian government has initiated a pioneering project to digitize the country's vast artistic heritage, making it accessible online through virtual reality tours, in a bid to promote Italian culture and history to a global audience and foster digital innovation in the arts.
+     <es> El gobierno italiano ha iniciado un proyecto pionero para digitalizar el vasto patrimonio artístico del país, haciéndolo accesible en línea a través de giras de realidad virtual, en un intento por promover la cultura y la historia italianas a una audiencia global y fomentar la innovación digital en las artes.
+
+55.  <en> Australia's scientific community has achieved a breakthrough in coral reef restoration technology, successfully developing a method to accelerate coral growth, which offers hope for the restoration of the Great Barrier Reef and other endangered coral ecosystems around the world.
+     <es> La comunidad científica de Australia ha logrado un gran avance en la tecnología de restauración de arrecifes de coral, desarrollando con éxito un método para acelerar el crecimiento de los corales, que ofrece esperanza para la restauración de la Gran Barrera de Coral y otros ecosistemas coralinos en peligro de extinción en todo el mundo.
+
+56.  <en> Canada has introduced a new immigration policy designed to attract skilled workers in the technology sector, offering fast-track visas and incentives for startups, in a move to bolster the country's position as a leading destination for tech innovation and entrepreneurship.
+     <es> Canadá ha introducido una nueva política migratoria diseñada para atraer trabajadores cualificados en el sector tecnológico, ofreciendo visas rápidas e incentivos para nuevas empresas, en un movimiento para reforzar la posición del país como un destino líder para la innovación tecnológica y el emprendimiento.
+
+57.  <en> In India, a new initiative to convert agricultural waste into biofuel has the potential to revolutionize the country's energy sector, reduce air pollution caused by crop burning, and provide farmers with an additional source of income.
+     <es> En India, una nueva iniciativa para convertir desechos agrícolas en biocombustibles tiene el potencial de revolucionar el sector energético del país, reducir la contaminación del aire causada por la quema de cultivos y proporcionar a los agricultores una fuente adicional de ingresos.
+
+58.  <en> Mexico's culinary scene has been recognized by UNESCO as an Intangible Cultural Heritage, highlighting the country's diverse culinary traditions and their role in community identity and sustainability; this recognition is expected to boost gastronomic tourism and preservation efforts.
+     <es> La escena culinaria de México ha sido reconocida por la Unesco como Patrimonio Cultural Inmaterial, destacando las diversas tradiciones culinarias del país y su papel en la identidad y sostenibilidad comunitaria; se espera que este reconocimiento impulse los esfuerzos de turismo gastronómico y preservación.
+
+59.  <en> The United Kingdom has embarked on a groundbreaking project to map the genetic code of the British Isles, aiming to uncover the historical migrations and health patterns of its population, which could provide insights into genetic diseases and historical population movements.
+     <es> Reino Unido se ha embarcado en un proyecto innovador para mapear el código genético de las islas británicas, con el objetivo de descubrir las migraciones históricas y los patrones de salud de su población, que podrían proporcionar información sobre enfermedades genéticas y movimientos históricos de población.
+
+60.  <en> France has announced the launch of a new cultural initiative, "La Francophonie en Fête," aimed at promoting the French language and Francophone cultures around the world through a series of events, exhibitions, and educational programs, fostering cultural exchange and appreciation for the diversity of the Francophone world.
+     <es> Francia ha anunciado el lanzamiento de una nueva iniciativa cultural, "La Francofonía en Fête", destinada a promover la lengua francesa y las culturas francófonas en todo el mundo a través de una serie de eventos, exposiciones y programas educativos, fomentando el intercambio cultural y el aprecio por la diversidad del mundo francófono.
+
+Translation time: 0.883s
 ================================================================================
 

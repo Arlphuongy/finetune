@@ -1,5 +1,6 @@
 import torch
 import time
+import re
 import sys
 
 from transformers import MarianTokenizer, MarianMTModel, AutoTokenizer
@@ -16,7 +17,13 @@ def print_source_texts(src_texts):
 
 
 def print_translations(
-    model_dir, src_texts, translations, translation_time, log_file_name
+    model_dir,
+    src_lang,
+    tgt_lang,
+    src_texts,
+    translations,
+    translation_time,
+    log_file_name,
 ):
     with open(log_file_name, "w", encoding="utf-8") as log_file:
         print(f"Model: {model_dir}", file=log_file)
@@ -29,15 +36,18 @@ def print_translations(
             # This ensures the index + '.' takes up the same amount of space for each entry
             index_str = f"{idx}.".ljust(max_index_length + 2)
 
-            # print(f"{index_str} <EN> {src}\n{' ' * (max_index_length + 2)} <VI> {trans}\n", file=log_file)
-            print(trans, file=log_file)
+            print(
+                f"{index_str} <{src_lang}> {src}\n{' ' * (max_index_length + 2)} <{tgt_lang}> {trans}\n",
+                file=log_file,
+            )
+            # print(trans, file=log_file)
 
         print(f"Translation time: {translation_time:.3f}s", file=log_file)
         print("=" * 80, file=log_file)
         print(file=log_file)
 
 
-def translate_with_ct2fast_model(texts, model_dir, log_file_name):
+def translate_with_ct2fast_model(texts, src_lang, tgt_lang, model_dir, log_file_name):
     torch.cuda.reset_peak_memory_stats()
     torch.cuda.synchronize()
 
@@ -54,10 +64,18 @@ def translate_with_ct2fast_model(texts, model_dir, log_file_name):
 
     translations = [output for output in outputs]
     translation_time = end_time - start_time
-    print_translations(model_dir, texts, translations, translation_time, log_file_name)
+    print_translations(
+        model_dir,
+        src_lang,
+        tgt_lang,
+        texts,
+        translations,
+        translation_time,
+        log_file_name,
+    )
 
 
-def translate_with_opus_mt(texts, model_name, log_file_name):
+def translate_with_opus_mt(texts, src_lang, tgt_lang, model_name, log_file_name):
     # Ensure all CUDA operations have finished
     torch.cuda.synchronize()
 
@@ -95,7 +113,15 @@ def translate_with_opus_mt(texts, model_name, log_file_name):
     translation_time = end_time - start_time
 
     # Use the new print function
-    print_translations(model_name, texts, translations, translation_time, log_file_name)
+    print_translations(
+        model_name,
+        src_lang,
+        tgt_lang,
+        texts,
+        translations,
+        translation_time,
+        log_file_name,
+    )
 
 
 if __name__ == "__main__":
@@ -111,11 +137,34 @@ if __name__ == "__main__":
                 ):  # Check if line is not empty and has more than 20 characters
                     target_list.append(line)
 
-    add_texts_from_file("content.txt", src_texts)
+    add_texts_from_file("content_en.txt", src_texts)
 
     # print_source_texts(src_texts)
-    translate_with_opus_mt(src_texts, "Eugenememe/netflix-en-fr", "netflix_en_fr.log")
+    translate_with_opus_mt(
+        src_texts, "en", "fr", "Eugenememe/netflix-en-fr", "netflix_en_fr.log"
+    )
+    translate_with_opus_mt(
+        src_texts, "en", "es", "Eugenememe/netflix-en-es", "netflix_en_es.log"
+    )
+    translate_with_opus_mt(
+        src_texts, "en", "vi", "Eugenememe/netflix-en-vi", "netflix_en_vi.log"
+    )
+    translate_with_opus_mt(
+        src_texts, "en", "zh", "Eugenememe/netflix-en-zh", "netflix_en_zh.log"
+    )
+
     # translate_with_ct2fast_model(src_texts, "ct2fast-netflix-en-vi")
     # translate_with_opus_mt(src_texts, "Eugenememe/news-en-vi")
     # translate_with_ct2fast_model(src_texts, "ct2fast-news-en-vi")
-    translate_with_opus_mt(src_texts, "Eugenememe/mix-en-fr-1m", "mix_en_fr_1m.log")
+    translate_with_opus_mt(
+        src_texts, "en", "fr", "Eugenememe/mix-en-fr-1m", "mix_en_fr_1m.log"
+    )
+    translate_with_opus_mt(
+        src_texts, "en", "es", "Eugenememe/mix-en-es-1m", "mix_en_es_1m.log"
+    )
+    translate_with_opus_mt(
+        src_texts, "en", "vi", "Eugenememe/mix-en-vi-1m", "mix_en_vi_1m.log"
+    )
+    translate_with_opus_mt(
+        src_texts, "en", "zh", "Eugenememe/mix-en-zh-1m", "mix_en_zh_1m.log"
+    )
