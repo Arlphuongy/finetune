@@ -126,26 +126,3 @@ trainer = Seq2SeqTrainer(
 
 trainer.train()
 trainer.save_model(f"{MODEL_NAME}-finetuned")
-
-# Print out saved model files
-for dirname, _, filenames in os.walk(f"{MODEL_NAME}-finetuned"):
-    for filename in filenames:
-        print(os.path.join(dirname, filename))
-
-# Translate a sample text to test the model
-src_text = [
-    "I love you",
-    "User: How are you doing?",
-    "How do you call a fast Flan-ingo?",
-    "My name is Sarah, I live in London with my family and I absolutely love every bit of it.",
-    "Friedrich Wilhelm Nietzsche was a German philosopher. He began his career as a classical philologist before turning to philosophy.",
-    "George Soros Quotes. I'm only rich because I know when I'm wrong. It's not whether you're right or wrong, but how much money you make when you're right and how much you lose when you're wrong. It is much easier to put existing resources to better use, than to develop resources where they do not exist.",
-    "Van Thinh Phat chairwoman Truong My Lan has offered to hand in 13 family-owned assets as compensation for the money she is accused of appropriating from Saigon Commercial Bank. Today, before the judges, I promise to submit my shares and the shares of my children and friends to the State Bank of Vietnam for the purpose of managing SCB, she told the People's Court of Ho Chi Minh City Tuesday.",
-]
-FINETUNED_MODEL_NAME = f"{MODEL_NAME}-finetuned"
-tokenizer = MarianTokenizer.from_pretrained(FINETUNED_MODEL_NAME)
-finetuned_model = MarianMTModel.from_pretrained(FINETUNED_MODEL_NAME)
-translated = finetuned_model.generate(
-    **tokenizer(src_text, return_tensors="pt", padding=True)
-)
-print([tokenizer.decode(t, skip_special_tokens=True) for t in translated])
