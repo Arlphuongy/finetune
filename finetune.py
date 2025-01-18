@@ -15,21 +15,23 @@ from transformers import (
     EarlyStoppingCallback,
 )
 
-
 # Disable WANDB (Weights & Biases) for this session
 os.environ["WANDB_DISABLED"] = "true"
 
 # Set source and target languages for translation
-SOURCE_LANG = "en"
-TARGET_LANG = "de"
+SOURCE_LANG = "zh"
+TARGET_LANG = "en"
 
 # Load dataset and metric for evaluation (BLEU score)
 # raw_datasets = load_dataset(f"Eugenememe/mix-{SOURCE_LANG}-{TARGET_LANG}-1m")
-raw_datasets = load_dataset("Eugenememe/mix-en-de-800k")
+raw_datasets = load_dataset("arlzphuong/mix-en-zh-500k")
 metric = evaluate.load("sacrebleu")
 
 # MODEL_CHECKPOINT = f"Eugenememe/netflix-{SOURCE_LANG}-{TARGET_LANG}"
-MODEL_CHECKPOINT = f"Helsinki-NLP/opus-mt-{SOURCE_LANG}-{TARGET_LANG}"
+# MODEL_CHECKPOINT = f"Helsinki-NLP/opus-mt-{SOURCE_LANG}-{TARGET_LANG}"
+# tokenizer = AutoTokenizer.from_pretrained(MODEL_CHECKPOINT)
+
+MODEL_CHECKPOINT = "arlzphuong/zh_to_en"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_CHECKPOINT)
 
 PREFIX = ""
@@ -57,24 +59,25 @@ tokenized_datasets = raw_datasets.map(preprocess_function, batched=True)
 model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CHECKPOINT)
 
 # Load the model from a checkpoint
-# CHECKPOINT_PATH = "opus-mt-en-es-finetuned/checkpoint-3582"
+# CHECKPOINT_PATH = "opus-mt-zh-en-finetuned/checkpoint-484"
 # model = AutoModelForSeq2SeqLM.from_pretrained(CHECKPOINT_PATH)
 
 # Define batch size and model name derived from checkpoint
-BATCH_SIZE = 64
+BATCH_SIZE = 128 #increase batch size 64 -> 128
 MODEL_NAME = MODEL_CHECKPOINT.rsplit("/", maxsplit=1)[-1]
+
 
 # Set training arguments for the model
 args = Seq2SeqTrainingArguments(
     output_dir=f"{MODEL_NAME}-finetuned",
     evaluation_strategy="epoch",
     save_strategy="epoch",
-    learning_rate=2e-5,
+    learning_rate=2e-3, #changed learning rate
     per_device_train_batch_size=BATCH_SIZE,
     per_device_eval_batch_size=BATCH_SIZE,
     weight_decay=0.01,
     save_total_limit=1,
-    num_train_epochs=6,
+    num_train_epochs=2, #changed from 6 -> 2
     predict_with_generate=True,
     logging_dir="./logs",
     logging_steps=100,
@@ -125,4 +128,7 @@ trainer = Seq2SeqTrainer(
 )
 
 trainer.train()
-trainer.save_model(f"{MODEL_NAME}-finetuned")
+trainer.save_model(f"{MODEL_NAME}-500k")
+
+
+
